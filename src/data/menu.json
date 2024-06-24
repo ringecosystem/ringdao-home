@@ -2,15 +2,50 @@
   "menu": [
     {
       "name": "Developers",
-      "lists": ["Developers", "Darwinia Guide", "Msgport Guide", "Bug Bounty"]
+      "lists": [
+        {
+          "name": "Developers"
+        },
+        {
+          "name": "Darwinia Guide",
+          "link": "https://docs.darwinia.network/build/getting-started/networks/overview/"
+        },
+        {
+          "name": "Msgport Guide",
+          "link": "https://docs.msgport.xyz/build/networks/"
+        },
+        {
+          "name": "Bug Bounty",
+          "link": "https://immunefi.com/bug-bounty/ringdao/"
+        }
+      ]
     },
     {
       "name": "Community",
-      "lists": ["Community", "Discussion", "RFP"]
+      "lists": [
+        {
+          "name": "Community"
+        },
+        {
+          "name": "Discussion",
+          "link": "https://github.com/orgs/darwinia-network/discussions"
+        },
+        {
+          "name": "RFP",
+          "link": "https://github.com/darwinia-network/collaboration/issues"
+        }
+      ]
     },
     {
       "name": "Vote",
-      "lists": ["Vote", "Vote"]
+      "lists": [
+        {
+          "name": "Vote"
+        },
+        {
+          "name": "Vote"
+        }
+      ]
     }
   ]
 }

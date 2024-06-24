@@ -36,15 +36,16 @@ const Header = () => {
                   {menu.lists.map((item, idx) => (
                     <li>
                       <a
-                        href="#"
+                        target="_blank"
+                        href={item.link}
                         className={
-                          "text-[12px] leading-[19.2px] tracking-[1px] opacity-50 text-white " +
+                          "text-[12px] leading-[19.2px] tracking-[1px] text-white " +
                           (idx === 0
                             ? "opacity-50 font-[300]"
                             : "opacity-100 font-[600]")
                         }
                       >
-                        {item}
+                        {item.name}
                       </a>
                     </li>
                   ))}
