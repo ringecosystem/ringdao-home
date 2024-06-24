@@ -38,14 +38,7 @@
     },
     {
       "name": "Vote",
-      "lists": [
-        {
-          "name": "Vote"
-        },
-        {
-          "name": "Vote"
-        }
-      ]
+      "lists": []
     }
   ]
 }

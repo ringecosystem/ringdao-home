@@ -1,4 +1,4 @@
-import { useState } from "preact/hooks";
+import { useEffect, useState } from "preact/hooks";
 import React from "react";
 import menuData from "../data/menu.json";
 
@@ -13,8 +13,13 @@ const Header = () => {
       setOpenMenu(index);
     }
   };
+
+  useEffect(() => {
+    document.addEventListener("click", handleMenuClick);
+  }, []);
+
   return (
-    <header className="flex items-center justify-between px-[20px] py-[23px] border-[1px] border-[#585858] w-full relative sm:px-[100px] sm:py-[102px] z-30">
+    <header className="flex items-center z-[1000] justify-between px-[20px] py-[23px] border-[1px] border-[#585858] w-full relative sm:px-[100px] sm:py-[102px]">
       <img
         src="/images/logo.png"
         alt="Ring Logo"
@@ -24,14 +29,19 @@ const Header = () => {
         {menuData.menu.map((menu, index) => (
           <div key={index} className="relative">
             <button
-              onClick={() => handleMenuClick(index)}
-              className="text-white font-[600] tracking-[1px] text-[16px] leading-[25.6px] flex items-center gap-[5px]"
+              onClick={(e) => {
+                e.stopPropagation();
+                handleMenuClick(index);
+              }}
+              className="text-white z-40 font-[600] tracking-[1px] text-[16px] leading-[25.6px] flex items-center gap-[5px]"
             >
               <span>{menu.name}</span>
-              <img src="/icons/Rectangle.svg" alt="Rectangle" />
+              {menu.lists.length !== 0 && (
+                <img src="/icons/Rectangle.svg" alt="Rectangle" />
+              )}
             </button>
-            {openMenu === index && (
-              <div className="absolute top-full right-0 mt-[19px] z-30 bg-[#00000081] min-w-[19.53vw] border-[1px] border-[#606364] p-[20px] ">
+            {menu.lists.length !== 0 && openMenu === index && (
+              <div className="absolute top-full z-[100] right-0 mt-[19px] bg-[#000] min-w-[19.53vw] border-[1px] border-[#606364] p-[20px] ">
                 <ul>
                   {menu.lists.map((item, idx) => (
                     <li>
