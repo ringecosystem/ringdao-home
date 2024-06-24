@@ -31,7 +31,7 @@ const Header = () => {
               <img src="/icons/Rectangle.svg" alt="Rectangle" />
             </button>
             {openMenu === index && (
-              <div className="absolute top-full right-0 mt-[19px] z-30 bg-[#00000081] min-w-[375px] border-[1px] border-[#606364] p-[20px] ">
+              <div className="absolute top-full right-0 mt-[19px] z-30 bg-[#00000081] min-w-[19.53vw] border-[1px] border-[#606364] p-[20px] ">
                 <ul>
                   {menu.lists.map((item, idx) => (
                     <li>
