@@ -1,33 +1,28 @@
-import { useState } from 'preact/hooks'
-import preactLogo from './assets/preact.svg'
-import viteLogo from '/vite.svg'
-import './app.css'
+import { useState } from "preact/hooks";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import EmpoweringChains from "./components/EmpoweringChains";
+import websitesData from "./data/websites.json";
+import WebSites from "./components/WebSites";
+import Footer from "./components/Footer";
 
 export function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} class="logo" alt="Vite logo" />
-        </a>
-        <a href="https://preactjs.com" target="_blank">
-          <img src={preactLogo} class="logo preact" alt="Preact logo" />
-        </a>
-      </div>
-      <h1>Vite + Preact</h1>
-      <div class="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/app.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p class="read-the-docs">
-        Click on the Vite and Preact logos to learn more
-      </p>
-    </>
-  )
+    <div className="sm:px-[100px]">
+      <Header />
+      <Hero />
+      <EmpoweringChains />
+      {websitesData.sites.map((item) => {
+        return (
+          <WebSites
+            logo={item.logo}
+            desc={item.desc}
+            isxapi={item.isxapi}
+            alt={item.alt}
+          />
+        );
+      })}
+      <Footer />
+    </div>
+  );
 }

@@ -1,0 +1,16 @@
+{
+  "menu": [
+    {
+      "name": "Developers",
+      "lists": ["Developers", "Darwinia Guide", "Msgport Guide", "Bug Bounty"]
+    },
+    {
+      "name": "Community",
+      "lists": ["Community", "Discussion", "RFP"]
+    },
+    {
+      "name": "Vote",
+      "lists": ["Vote", "Vote"]
+    }
+  ]
+}
