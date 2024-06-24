@@ -64,7 +64,7 @@ const Header = () => {
 
       <nav
         className={
-          "sm:hidden absolute top-[60px] left-0 w-full transition-transform duration-500 bg-black z-30 " +
+          "sm:hidden absolute top-[68px] left-0 w-full h-[calc(100vh-68px)] flex flex-col transition-transform duration-500 bg-black z-30 " +
           (menu ? "translate-x-0" : "translate-x-[100%]")
         }
       >
@@ -146,6 +146,31 @@ const Header = () => {
             </a>
           </li>
         </ul>
+        <div className="flex items-end justify-center flex-grow">
+          <div className="flex items-center gap-[20px] my-[30px] sm:my-[40px]">
+            <a href="https://twitter.com/DarwiniaNetwork" target="_blank">
+              <img
+                src="/icons/X.svg"
+                alt="X"
+                className="sm:w-[48px] sm:h-[48px]"
+              />
+            </a>
+            <a href="https://t.me/DarwiniaNetwork" target="_blank">
+              <img
+                src="/icons/Telegram.svg"
+                alt="Telegram"
+                className="sm:w-[48px] sm:h-[48px]"
+              />
+            </a>
+            <a href="https://github.com/darwinia-network" target="_blank">
+              <img
+                src="/icons/Github.svg"
+                alt="Github"
+                className="sm:w-[48px] sm:h-[48px]"
+              />
+            </a>
+          </div>
+        </div>
       </nav>
     </header>
   );
