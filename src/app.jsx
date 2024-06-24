@@ -64,7 +64,7 @@ export function App() {
       <Hero className="hidden 2xl:block" />
       <div className="sm:px-[100px]">
         <Header />
-        <Hero className="2xl:hidden block" />
+        <Hero className="block 2xl:hidden" />
         <EmpoweringChains />
         {websitesData.sites.map((item) => {
           return (
@@ -73,6 +73,7 @@ export function App() {
               desc={item.desc}
               isxapi={item.isxapi}
               alt={item.alt}
+              link={item.link}
             />
           );
         })}
