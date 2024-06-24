@@ -80,16 +80,14 @@ const Header = () => {
       >
         <ul className="flex flex-col gap-[20px] p-[20px] border-b-[1px] border-b-[#585858]">
           <li>
-            <a
-              href="#"
-              className="text-[12px] leading-[19.2px] tracking-[1px] font-[300] opacity-50 text-white"
-            >
+            <span className="text-[12px] leading-[19.2px] tracking-[1px] font-[300] opacity-50 text-white">
               Developers
-            </a>
+            </span>
           </li>
           <li>
             <a
-              href="#"
+              target="_blank"
+              href="https://docs.darwinia.network/build/getting-started/networks/overview/"
               className="text-white font-[600] text-[16px] leading-[25.6px] tracking-[1px]"
             >
               Darwinia Guide
@@ -97,7 +95,8 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="#"
+              target="_blank"
+              href="https://docs.msgport.xyz/build/networks/"
               className="text-white font-[600] text-[16px] leading-[25.6px] tracking-[1px]"
             >
               Msgport Guide
@@ -105,7 +104,8 @@ const Header = () => {
           </li>
           <li className="">
             <a
-              href="#"
+              target="_blank"
+              href="https://immunefi.com/bug-bounty/ringdao/"
               className="text-white font-[600] text-[16px] leading-[25.6px] tracking-[1px]"
             >
               Bug Bounty
@@ -114,16 +114,14 @@ const Header = () => {
         </ul>
         <ul className="flex flex-col gap-[20px] p-[20px] border-b-[1px] border-b-[#585858]">
           <li>
-            <a
-              href="#"
-              className="text-[12px] leading-[19.2px] tracking-[1px] font-[300] opacity-50 text-white"
-            >
+            <span className="text-[12px] leading-[19.2px] tracking-[1px] font-[300] opacity-50 text-white">
               Community
-            </a>
+            </span>
           </li>
           <li>
             <a
-              href="#"
+              target="_blank"
+              href=" https://github.com/orgs/darwinia-network/discussions"
               className="text-white font-[600] text-[16px] leading-[25.6px] tracking-[1px]"
             >
               Discussion
@@ -131,7 +129,8 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="#"
+              target="_blank"
+              href="https://github.com/darwinia-network/collaboration/issues"
               className="text-white font-[600] text-[16px] leading-[25.6px] tracking-[1px]"
             >
               RFP
@@ -140,12 +139,9 @@ const Header = () => {
         </ul>
         <ul className="flex flex-col gap-[20px] p-[20px] border-b-[1px] border-b-[#585858]">
           <li>
-            <a
-              href="#"
-              className="text-[12px] leading-[19.2px] tracking-[1px] font-[300] opacity-50 text-white"
-            >
+            <span className="text-[12px] leading-[19.2px] tracking-[1px] font-[300] opacity-50 text-white">
               Vote
-            </a>
+            </span>
           </li>
           <li>
             <a
