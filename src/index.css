@@ -29,4 +29,7 @@
 
 html {
   font-family: EuclidCircularA;
+  overflow-x: hidden;
+  background-color: #000;
+  width: 100vw;
 }
