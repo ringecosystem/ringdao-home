@@ -14,7 +14,7 @@ const Header = () => {
     }
   };
   return (
-    <header className="flex items-center justify-between px-[20px] py-[23px] border-[1px] border-[#585858] w-full relative sm:px-[100px] sm:py-[102px]">
+    <header className="flex items-center justify-between px-[20px] py-[23px] border-[1px] border-[#585858] w-full relative sm:px-[100px] sm:py-[102px] z-30">
       <img
         src="/images/logo.png"
         alt="Ring Logo"
