@@ -22,7 +22,7 @@ jobs:
           vercel_token: ${{ secrets.VERCEL_TOKEN }}
           vercel_group: itering
           preview_output: true
-          project_name: ringhome-home
+          project_name: ringdao-home
           dist_path: dist
           enable_cache: true
           enable_notify_slack: true
