@@ -1,8 +1,7 @@
 name: Deploy develop
 
 on:
-  push:
-    branches: [main]
+  pull_request:
 
 jobs:
   deploy:
