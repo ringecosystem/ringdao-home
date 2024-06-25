@@ -1,0 +1,34 @@
+name: Deploy production
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/checkout@v2
+        with:
+          repository: darwinia-network/devops
+          path: .github
+
+      - uses: ./.github/actions/smart-vercel
+        name: Deploy to Vercel
+        with:
+          node_version: 20
+          vercel_token: ${{ secrets.VERCEL_TOKEN }}
+          vercel_group: itering
+          preview_output: true
+          project_name: ringdao-home
+          dist_path: dist
+          prod_mode: true
+          enable_cache: true
+          enable_notify_slack: true
+          slack_channel: public-darwinia-websites-apps
+          slack_webhook: ${{ secrets.SLACK_INCOMING_WEBHOOK_URL }}
+
