@@ -21,9 +21,9 @@ const Header = () => {
   return (
     <header className="flex items-center z-[1000] justify-between px-[20px] py-[23px] border-[1px] border-[#585858] w-full relative sm:px-[100px] sm:py-[102px]">
       <img
-        src="/images/logo.png"
+        src="/images/logo.svg"
         alt="Ring Logo"
-        className="w-[86.07px] h-[20px] sm:w-[128px] sm:h-[29.63px]"
+        className="w-[86.07px] h-[20px] sm:w-[128px] sm:h-[29.63px] z-50"
       />
       <nav className="hidden sm:flex items-center gap-[40px]">
         {menuData.menu.map((menu, index) => (
