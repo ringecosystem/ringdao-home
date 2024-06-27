@@ -4,7 +4,7 @@ const Hero = ({ className }) => {
   return (
     <div
       className={
-        "flex items-center flex-col gap-[40px] px-[20px] relative sm:px-[100px] border-[1px] border-[#585858] border-b-[transparent] 2xl:border-none 2xl:ml-[-30%] 2xl:min-w-[900px] 3xl:ml-[-15%] 4xl:ml-0 4xl:min-w-[1000px] 2xl:mt-[100px] 3xl:mt-[94px]  " +
+        "flex items-center flex-col gap-[40px] px-[20px] relative sm:px-[100px] border-[1px] border-[#585858] border-b-[transparent] 2xl:border-none 2xl:ml-[-30%] 2xl:min-w-[900px] 4xl:min-w-[1000px] 2xl:mt-[100px] 3xl:mt-[94px]  " +
         className
       }
     >
@@ -14,7 +14,7 @@ const Hero = ({ className }) => {
         autoPlay
         muted
         loop
-        className="w-full"
+        className="2xl:fixed w-full h-full left-[-27%] top-0 2xl:max-w-[900px] 3xl:left-[-15%] 4xl:left-[0] 3xl:max-w-[1000px]"
         preload="auto"
         poster="/images/poster.png"
       >
