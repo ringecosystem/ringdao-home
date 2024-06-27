@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 export function App() {
   return (
-    <div className="flex ">
+    <div className="flex 3xl:justify-end 2xl:pl-[20px] 3xl:pl-[290px] 4xl:pl-[670px]">
       {window.innerWidth >= 1000 && window.innerWidth < 1440 && (
         <>
           <img
@@ -36,7 +36,7 @@ export function App() {
         <>
           <img
             src="/images/1920bg1.png"
-            className=" absolute right-0 top-[30%] -z-50 "
+            className=" absolute right-0 top-[30%] z-50 "
           />
           <img
             src="/images/1920bg2.png"
@@ -44,7 +44,7 @@ export function App() {
           />
           <img
             src="/images/1920bg3.png"
-            className="absolute left-[10%] top-[140%] -z-50"
+            className="absolute left-[10%] top-[140%] z-50"
           />
         </>
       )}
