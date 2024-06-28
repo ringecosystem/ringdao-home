@@ -33,3 +33,6 @@ html {
   background-color: #000;
   width: 100vw;
 }
+body {
+  overflow: hidden;
+}

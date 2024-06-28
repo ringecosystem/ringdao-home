@@ -74,7 +74,7 @@ const Header = () => {
 
       <nav
         className={
-          "sm:hidden absolute top-[68px] left-0 w-full h-[calc(100vh-68px)] flex flex-col transition-transform duration-500 bg-black z-30 " +
+          "sm:hidden absolute top-[68px] right-0 w-full h-[calc(100vh-68px)] flex flex-col transition-transform duration-500 bg-black z-30 " +
           (menu ? "translate-x-0" : "translate-x-[100%]")
         }
       >
