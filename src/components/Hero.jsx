@@ -14,6 +14,7 @@ const Hero = ({ className }) => {
         autoPlay
         muted
         loop
+        controls={false}
         className="2xl:fixed w-full h-full left-[-27%] top-0 2xl:max-w-[900px] 3xl:left-[-15%] 4xl:left-[0] 3xl:max-w-[1000px]"
         preload="auto"
         poster="/images/poster.png"
