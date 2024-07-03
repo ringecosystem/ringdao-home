@@ -15,6 +15,7 @@
       "link": "https://darwinia.network/"
     },
     {
+      "logo": "/icons/XAPI.svg",
       "desc": "The innovative Oracle service that supports real-world data on the blockchain.",
       "isxapi": true,
       "alt": "XAPI logo",
