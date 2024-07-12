@@ -4,11 +4,13 @@ import EmpoweringChains from "./components/EmpoweringChains";
 import websitesData from "./data/websites.json";
 import WebSites from "./components/WebSites";
 import Footer from "./components/Footer";
+import useWidth from "./hooks/useWidth";
 
 export function App() {
+  const width = useWidth();
   return (
     <div className="flex 3xl:justify-end 2xl:pl-[20px] 3xl:pl-[290px] 4xl:pl-[670px]">
-      {window.innerWidth >= 1000 && window.innerWidth < 1440 && (
+      {width >= 1000 && width < 1440 && (
         <>
           <img
             src="/images/1000bg1.png"
@@ -20,7 +22,7 @@ export function App() {
           />
         </>
       )}
-      {window.innerWidth >= 1440 && window.innerWidth < 1920 && (
+      {width >= 1440 && width < 1920 && (
         <>
           <img
             src="/images/1440bg1.png"
@@ -32,7 +34,7 @@ export function App() {
           />
         </>
       )}
-      {window.innerWidth >= 1920 && window.innerWidth < 2560 && (
+      {width >= 1920 && width < 2560 && (
         <>
           <img
             src="/images/1920bg1.png"
@@ -48,7 +50,7 @@ export function App() {
           />
         </>
       )}
-      {window.innerWidth >= 2560 && (
+      {width >= 2560 && (
         <>
           <img
             src="/images/2560bg1.png"
