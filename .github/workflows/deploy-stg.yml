@@ -11,12 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: actions/checkout@v2
-        with:
-          repository: darwinia-network/devops
-          path: .github
-
-      - uses: ./.github/actions/smart-vercel
+      - uses: darwinia-network/devops/actions/smart-vercel@main
         name: Deploy to Vercel
         with:
           node_version: 20
