@@ -121,7 +121,7 @@ const Header = () => {
           <li>
             <a
               target="_blank"
-              href=" https://github.com/orgs/darwinia-network/discussions"
+              href=" https://github.com/orgs/ringecosystem/discussions"
               className="text-white font-[600] text-[16px] leading-[25.6px] tracking-[1px]"
             >
               Discussion
@@ -130,7 +130,7 @@ const Header = () => {
           <li>
             <a
               target="_blank"
-              href="https://github.com/darwinia-network/collaboration/issues"
+              href="https://github.com/ringecosystem/collaboration/issues"
               className="text-white font-[600] text-[16px] leading-[25.6px] tracking-[1px]"
             >
               RFP
@@ -154,21 +154,21 @@ const Header = () => {
         </ul>
         <div className="flex items-end justify-center flex-grow">
           <div className="flex items-center gap-[20px] my-[30px] sm:my-[40px]">
-            <a href="https://twitter.com/DarwiniaNetwork" target="_blank">
+            <a href="https://x.com/ringecosystem" target="_blank">
               <img
                 src="/icons/X.svg"
                 alt="X"
                 className="sm:w-[48px] sm:h-[48px]"
               />
             </a>
-            <a href="https://t.me/DarwiniaNetwork" target="_blank">
+            <a href="https://t.me/ringecosystem" target="_blank">
               <img
                 src="/icons/Telegram.svg"
                 alt="Telegram"
                 className="sm:w-[48px] sm:h-[48px]"
               />
             </a>
-            <a href="https://github.com/darwinia-network" target="_blank">
+            <a href="https://github.com/ringecosystem" target="_blank">
               <img
                 src="/icons/Github.svg"
                 alt="Github"
