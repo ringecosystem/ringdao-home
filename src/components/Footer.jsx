@@ -13,17 +13,17 @@ const Footer = () => {
         SubAPI.
       </p>
       <div className="flex items-center gap-[20px] my-[30px] sm:my-[40px]">
-        <a href="https://twitter.com/DarwiniaNetwork" target="_blank">
+        <a href="https://x.com/ringecosystem" target="_blank">
           <img src="/icons/X.svg" alt="X" className="sm:w-[48px] sm:h-[48px]" />
         </a>
-        <a href="https://t.me/DarwiniaNetwork" target="_blank">
+        <a href="https://t.me/ringecosystem" target="_blank">
           <img
             src="/icons/Telegram.svg"
             alt="Telegram"
             className="sm:w-[48px] sm:h-[48px]"
           />
         </a>
-        <a href="https://github.com/darwinia-network" target="_blank">
+        <a href="https://github.com/ringecosystem" target="_blank">
           <img
             src="/icons/Github.svg"
             alt="Github"

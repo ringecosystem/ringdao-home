@@ -16,7 +16,7 @@ const EmpoweringChains = () => {
       </div>
       <p className="font-[300] tracking-[1px] leading-[20.29px] text-[16px] text-white opacity-50 sm:text-[20px] sm:leading-[25.36px]">
         Governed by all the RING token holders, this decentralized entity
-        directs the Darwinia networks, Msgport protocol, and XAPI's evolution
+        directs the Darwinia chain, Msgport protocol, and XAPI's oracle service
       </p>
     </div>
   );
