@@ -44,10 +44,6 @@ export function App() {
             src="/images/1920bg2.png"
             className="absolute left-[10%] top-[0] z-[60]"
           />
-          <img
-            src="/images/1920bg3.png"
-            className="absolute left-[10%] top-[140%] z-50"
-          />
         </>
       )}
       {width >= 2560 && (
