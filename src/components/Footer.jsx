@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="px-[20px] py-[100px] relative sm:px-[100px] border-[1px] border-[#585858]">
       <div className="w-[15px] h-[15px] bg-white absolute top-0 left-0"></div>
       <p className="text-[16px] leading-[19.2px] text-white font-[300] sm:text-[14px] sm:leading-[22.4px] sm:font-[400] tracking-[1px] ">
-        RingDAO is a DAO implemented through the Tally platform. RING serves as
+        RingDAO is a DAO implemented through the Aragon framework. RING serves as
         the governance token for RingDAO, and the upgrades to Darwinia Chain
         will be governed by RingDAO. RING also functions as the Gas Token for
         Darwinia Chain and plays a role in Collator Staking, among other
