@@ -1,0 +1,20 @@
+{
+  "menu": [
+    {
+      "name": "About RING",
+      "url": "/"
+    },
+    {
+      "name": "Project",
+      "url": "/"
+    },
+    {
+      "name": "Program",
+      "url": "/"
+    },
+    {
+      "name": "Roadmap",
+      "url": "/"
+    }
+  ]
+}
