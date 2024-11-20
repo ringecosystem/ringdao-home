@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="flex flex-col sm:flex-row items-center justify-center gap-[40px] p-[100px_20px] sm:p-[60px] relative border-b-solid border-b-black border-b-[1px]">
-      <div className="absolute bg-black w-[25px] h-[25px] top-0 left-0" />
+      <div className="absolute bg-black w-[15px] h-[15px] sm:w-[25px] sm:h-[25px] top-0 left-0" />
       <video
         src="/videos/hero.mp4"
         muted
