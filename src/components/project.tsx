@@ -1,12 +1,12 @@
 export default function Project() {
   return (
     <>
-      <div className="p-[60px] relative border-b-solid border-b-black border-b-[1px]">
-        <div className="absolute bg-black w-[25px] h-[25px] top-0 left-0" />
+      <div className="p-[50px_20px] sm:p-[60px] relative border-b-solid border-b-black border-b-[1px]">
+        <div className="absolute bg-black w-[15px] h-[15px] sm:w-[25px] sm:h-[25px] top-0 left-0" />
         <h2 className="text-[50px] leading-[64px] font-bold">Project</h2>
       </div>
-      <div className="flex border-b-solid border-b-[1px] border-b-black">
-        <div className="flex-grow flex-shrink-0 w-[50%] border-r-[1px] border-r-black border-r-solid p-[60px] h-full self-stretch">
+      <div className="sm:flex border-b-solid border-b-[1px] border-b-black">
+        <div className="flex-grow flex-shrink-0 sm:w-[50%] border-b-solid border-b-[1px] sm:border-b-0 border-b-black border-r-0 sm:border-r-[1px] border-r-black border-r-solid p-[100px_20px] sm:p-[60px] h-full self-stretch">
           <div className="py-[15px] mb-[40px]">
             <img
               src="/images/darwinia.svg"
@@ -34,7 +34,7 @@ export default function Project() {
             </a>
           </div>
         </div>
-        <div className="flex-grow flex-shrink-0 w-[50%] p-[60px] self-stretch">
+        <div className="flex-grow flex-shrink-0 sm:w-[50%] p-[100px_20px] sm:p-[60px] self-stretch">
           <div className="py-[15px] mb-[40px]">
             <img
               src="/images/paralink.svg"
@@ -65,8 +65,8 @@ export default function Project() {
           </div>
         </div>
       </div>
-      <div className="flex border-b-solid border-b-[1px] border-b-black">
-        <div className="flex-grow flex-shrink-0 w-[50%] border-r-[1px] border-r-black border-r-solid p-[60px] h-full">
+      <div className="sm:flex border-b-solid border-b-[1px] border-b-black">
+        <div className="flex-grow flex-shrink-0 sm:w-[50%] border-b-solid border-b-[1px] sm:border-b-0 border-b-black border-r-0 sm:border-r-[1px] border-r-black border-r-solid p-[100px_20px] sm:p-[60px] h-full">
           <div className="py-[15px] mb-[40px]">
             <img
               src="/images/msgport.svg"
@@ -94,7 +94,7 @@ export default function Project() {
             </a>
           </div>
         </div>
-        <div className="flex-grow flex-shrink-0 w-[50%] p-[60px] h-full">
+        <div className="flex-grow flex-shrink-0 sm:w-[50%] p-[100px_20px] sm:p-[60px] h-full">
           <div className="py-[15px] mb-[40px]">
             <img
               src="/images/xapi.svg"

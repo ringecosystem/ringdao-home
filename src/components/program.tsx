@@ -1,11 +1,11 @@
 export default function Program() {
   return (
     <>
-      <div className="p-[60px] relative border-b-solid border-b-black border-b-[1px]">
-        <div className="absolute bg-black w-[25px] h-[25px] top-0 left-0" />
+      <div className="p-[50px_20px] sm:p-[60px] relative border-b-solid border-b-black border-b-[1px]">
+        <div className="absolute bg-black w-[15px] h-[15px] sm:w-[25px] sm:h-[25px] top-0 left-0" />
         <h2 className="text-[50px] leading-[64px] font-bold">Programs</h2>
       </div>
-      <div className="flex gap-[60px] border-b-solid border-b-[1px] border-b-black p-[60px]">
+      <div className="sm:flex gap-[60px] border-b-solid border-b-[1px] border-b-black p-[60px]">
         <video
           src="/videos/program1.mp4"
           autoPlay
@@ -35,7 +35,7 @@ export default function Program() {
           </a>
         </div>
       </div>
-      <div className="flex gap-[60px] border-b-solid border-b-[1px] border-b-black p-[60px]">
+      <div className="flex flex-col-reverse sm:flex-row  gap-[60px] border-b-solid border-b-[1px] border-b-black p-[60px]">
         <div className="flex flex-col gap-[20px] justify-center">
           <h2 className="text-[30px] leading-[38px] font-[600]">Bug Bounty </h2>
           <p className="text-[16px] leading-[26px]">
@@ -63,7 +63,7 @@ export default function Program() {
           className="w-[436px] h-[436px]"
         />
       </div>
-      <div className="flex gap-[60px] border-b-solid border-b-[1px] border-b-black p-[60px]">
+      <div className="sm:flex gap-[60px] border-b-solid border-b-[1px] border-b-black p-[60px]">
         <video
           src="/videos/program3.mp4"
           autoPlay
