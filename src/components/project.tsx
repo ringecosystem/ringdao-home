@@ -1,7 +1,10 @@
 export default function Project() {
   return (
     <>
-      <div className="p-[50px_20px] sm:p-[60px] relative border-b-solid border-b-black border-b-[1px]">
+      <div
+        id="project"
+        className="p-[50px_20px] sm:p-[60px] relative border-b-solid border-b-black border-b-[1px]"
+      >
         <div className="absolute bg-black w-[15px] h-[15px] sm:w-[25px] sm:h-[25px] top-0 left-0" />
         <h2 className="text-[50px] leading-[64px] font-bold">Project</h2>
       </div>
@@ -24,7 +27,8 @@ export default function Project() {
           </p>
           <div className="mt-auto flex justify-end">
             <a
-              href="/"
+              href="https://darwinia.network/"
+              target="_blank"
               className="text-[16px] flex justify-center items-center gap-[10px] w-fit leading-[42px] pl-[15px] pr-[10px] h-[42px] rounded-[21px] border-[1px] border-solid border-black"
             >
               View Detail
@@ -38,7 +42,7 @@ export default function Project() {
           <div className="py-[15px] mb-[40px]">
             <img
               src="/images/paralink.svg"
-              alt="darwinia"
+              alt="paralink"
               className="w-[200px] h-[90px] object-contain"
             />
           </div>
@@ -54,7 +58,8 @@ export default function Project() {
           </p>
           <div className="mt-auto flex justify-end">
             <a
-              href="/"
+              href="https://para.link/"
+              target="_blank"
               className="text-[16px] flex justify-center items-center gap-[10px] w-fit leading-[42px] pl-[15px] pr-[10px] h-[42px] rounded-[21px] border-[1px] border-solid border-black"
             >
               View Detail
@@ -70,7 +75,7 @@ export default function Project() {
           <div className="py-[15px] mb-[40px]">
             <img
               src="/images/msgport.svg"
-              alt="darwinia"
+              alt="msgport"
               className="w-[200px] h-[90px] object-contain"
             />
           </div>
@@ -84,7 +89,8 @@ export default function Project() {
           </p>
           <div className="mt-auto flex justify-end">
             <a
-              href="/"
+              href="https://msgport.ringdao.com/"
+              target="_blank"
               className="text-[16px] flex justify-center items-center gap-[10px] w-fit leading-[42px] pl-[15px] pr-[10px] h-[42px] rounded-[21px] border-[1px] border-solid border-black"
             >
               View Detail
@@ -98,7 +104,7 @@ export default function Project() {
           <div className="py-[15px] mb-[40px]">
             <img
               src="/images/xapi.svg"
-              alt="darwinia"
+              alt="xapi"
               className="w-[200px] h-[90px] object-contain"
             />
           </div>
@@ -112,7 +118,8 @@ export default function Project() {
           </p>
           <div className="mt-auto flex justify-end">
             <a
-              href="/"
+              href="https://github.com/ringecosystem/xapi-contracts"
+              target="_blank"
               className="text-[16px] flex justify-center items-center gap-[10px] w-fit leading-[42px] pl-[15px] pr-[10px] h-[42px] rounded-[21px] border-[1px] border-solid border-black"
             >
               View Detail

@@ -1,6 +1,9 @@
 export default function About() {
   return (
-    <section className="flex flex-col gap-[40px] p-[50px_20px] sm:p-[60px] relative border-b-solid border-b-black border-b-[1px]">
+    <section
+      id="about"
+      className="flex flex-col gap-[40px] p-[50px_20px] sm:p-[60px] relative border-b-solid border-b-black border-b-[1px]"
+    >
       <div className="absolute bg-black w-[15px] h-[15px] sm:w-[25px] sm:h-[25px] top-0 left-0" />
       <h2 className="text-[50px] leading-[64px] text-center sm:text-left font-bold sm:font-normal">
         About <b>RING</b>

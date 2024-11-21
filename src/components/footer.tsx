@@ -9,19 +9,19 @@ export default function Footer() {
       <div className="flex flex-col items-center sm:items-end">
         <div className="flex justify-end gap-[20px] mb-[20px] sm:mb-[10px]">
           <a
-            href="/"
+            href="https://x.com/ringecosystem"
             className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] block bg-[url('/icons/x.svg')] bg-center bg-no-repeat bg-contain"
           />
           <a
-            href="/"
+            href="https://t.me/ringecosystem"
             className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] block bg-[url('/icons/telegram.svg')] bg-center bg-no-repeat bg-contain"
           />
           <a
-            href="/"
+            href="https://github.com/ringecosystem/"
             className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] block bg-[url('/icons/github.svg')] bg-center bg-no-repeat bg-contain"
           />
           <a
-            href="/"
+            href="https://discord.gg/BhNbKWWfGV"
             className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] block bg-[url('/icons/discord.svg')] bg-center bg-no-repeat bg-contain"
           />
         </div>

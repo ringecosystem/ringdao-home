@@ -1,7 +1,10 @@
 export default function Program() {
   return (
     <>
-      <div className="p-[50px_20px] sm:p-[60px] relative border-b-solid border-b-black border-b-[1px]">
+      <div
+        id="program"
+        className="p-[50px_20px] sm:p-[60px] relative border-b-solid border-b-black border-b-[1px]"
+      >
         <div className="absolute bg-black w-[15px] h-[15px] sm:w-[25px] sm:h-[25px] top-0 left-0" />
         <h2 className="text-[50px] leading-[64px] font-bold">Programs</h2>
       </div>
@@ -25,7 +28,8 @@ export default function Program() {
             vote on it.
           </p>
           <a
-            href="/"
+            href="https://www.tally.xyz/gov/ringdao"
+            target="_blank"
             className="text-[16px] flex justify-center items-center gap-[10px] w-fit leading-[42px] pl-[15px] pr-[10px] h-[42px] rounded-[21px] border-[1px] border-solid border-black"
           >
             Proposal or Vote
@@ -46,7 +50,8 @@ export default function Program() {
             our assets safe.
           </p>
           <a
-            href="/"
+            href="https://immunefi.com/bug-bounty/ringdao/information/"
+            target="_blank"
             className="text-[16px] flex justify-center items-center gap-[10px] w-fit leading-[42px] pl-[15px] pr-[10px] h-[42px] rounded-[21px] border-[1px] border-solid border-black"
           >
             View Immunefi
@@ -80,7 +85,8 @@ export default function Program() {
             innovations and tools that can help the RingDAO ecosystem grow.
           </p>
           <a
-            href="/"
+            href="https://github.com/ringecosystem/collaboration"
+            target="_blank"
             className="text-[16px] flex justify-center items-center gap-[10px] w-fit leading-[42px] pl-[15px] pr-[10px] h-[42px] rounded-[21px] border-[1px] border-solid border-black"
           >
             Apply Now

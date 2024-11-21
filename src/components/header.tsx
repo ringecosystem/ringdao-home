@@ -16,7 +16,12 @@ export default function Header() {
             <p>{item.name}</p>
           </a>
         ))}
-        <button className="bg-black text-white h-[38px] rounded-[19px] px-[15px]">
+        <button
+          onClick={() =>
+            window.open("https://www.tally.xyz/gov/ringdao ", "_blank")
+          }
+          className="bg-black text-white h-[38px] rounded-[19px] px-[15px]"
+        >
           Submit Proposals
         </button>
       </div>
@@ -43,25 +48,30 @@ export default function Header() {
               </p>
             </a>
           ))}
-          <button className="bg-black text-white h-[38px] rounded-[19px] px-[15px]">
+          <button
+            onClick={() =>
+              window.open("https://www.tally.xyz/gov/ringdao ", "_blank")
+            }
+            className="bg-black text-white h-[38px] rounded-[19px] px-[15px]"
+          >
             Submit Proposals
           </button>
         </div>
         <div className="flex justify-end gap-[20px] mb-[20px] flex-shrink-0">
           <a
-            href="/"
+            href="https://x.com/ringecosystem"
             className="w-[30px] h-[30px] block bg-[url('/icons/x.svg')] bg-center bg-no-repeat bg-contain"
           />
           <a
-            href="/"
+            href="https://t.me/ringecosystem"
             className="w-[30px] h-[30px] block bg-[url('/icons/telegram.svg')] bg-center bg-no-repeat bg-contain"
           />
           <a
-            href="/"
+            href="https://github.com/ringecosystem/"
             className="w-[30px] h-[30px] block bg-[url('/icons/github.svg')] bg-center bg-no-repeat bg-contain"
           />
           <a
-            href="/"
+            href="https://discord.gg/BhNbKWWfGV"
             className="w-[30px] h-[30px] block bg-[url('/icons/discord.svg')] bg-center bg-no-repeat bg-contain"
           />
         </div>
