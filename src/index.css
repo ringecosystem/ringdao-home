@@ -58,3 +58,17 @@ body {
   display: none !important;
   -webkit-appearance: none;
 }
+
+.cs-buttonHover:hover {
+  background-color: black;
+  color: white;
+}
+
+.cs-buttonHover:hover > span {
+  border-color: white;
+}
+
+.cs-buttonHover,
+.cs-buttonHover > span {
+  transition-duration: 200ms;
+}
