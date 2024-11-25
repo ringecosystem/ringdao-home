@@ -8,9 +8,9 @@ export default function Project() {
         <div className="absolute bg-black w-[15px] h-[15px] sm:w-[25px] sm:h-[25px] top-0 left-0" />
         <h2 className="text-[50px] leading-[64px] font-bold">Project</h2>
       </div>
-      <div className="sm:flex border-b-solid border-b-[1px] border-b-black">
-        <div className="flex-grow flex-shrink-0 sm:w-[50%] border-b-solid border-b-[1px] sm:border-b-0 border-b-black border-r-0 sm:border-r-[1px] border-r-black border-r-solid p-[100px_20px] sm:p-[60px] h-full self-stretch">
-          <div className="py-[15px] mb-[40px]">
+      <div className="sm:flex h-[600px] border-b-solid border-b-[1px] border-b-black">
+        <div className="flex-grow flex flex-col self-stretch flex-shrink-0 sm:w-[50%] border-b-solid border-b-[1px] sm:border-b-0 border-b-black border-r-0 sm:border-r-[1px] border-r-black border-r-solid p-[100px_20px] sm:p-[60px]">
+          <div className="h-[120px] flex items-center mb-[40px]">
             <img
               src="/images/darwinia.svg"
               alt="darwinia"
@@ -20,7 +20,7 @@ export default function Project() {
           <h3 className="text-[30px] leading-[38px] mb-[10px] font-bold">
             Darwinia Chain
           </h3>
-          <p className="text-[16px] leading-[25px] mb-[124px]">
+          <p className="text-[16px] leading-[25px] mb-[74px]">
             One of the earliest parachains in the Polkadot ecosystem, offering
             out-of-the-box cross-chain capabilities to exchange messages with
             other parachains and external Ethereum-compatible chains.
@@ -38,8 +38,8 @@ export default function Project() {
             </a>
           </div>
         </div>
-        <div className="flex-grow flex-shrink-0 sm:w-[50%] p-[100px_20px] sm:p-[60px] self-stretch">
-          <div className="py-[15px] mb-[40px]">
+        <div className="flex-grow flex flex-col flex-shrink-0 sm:w-[50%] p-[100px_20px] sm:p-[60px]">
+          <div className="h-[120px] flex items-center mb-[40px]">
             <img
               src="/images/paralink.svg"
               alt="paralink"
@@ -70,9 +70,9 @@ export default function Project() {
           </div>
         </div>
       </div>
-      <div className="sm:flex border-b-solid border-b-[1px] border-b-black">
-        <div className="flex-grow flex-shrink-0 sm:w-[50%] border-b-solid border-b-[1px] sm:border-b-0 border-b-black border-r-0 sm:border-r-[1px] border-r-black border-r-solid p-[100px_20px] sm:p-[60px] h-full">
-          <div className="py-[15px] mb-[40px]">
+      <div className="sm:flex h-[600px] border-b-solid border-b-[1px] border-b-black">
+        <div className="flex-grow flex flex-col self-stretch flex-shrink-0 sm:w-[50%] border-b-solid border-b-[1px] sm:border-b-0 border-b-black border-r-0 sm:border-r-[1px] border-r-black border-r-solid p-[100px_20px] sm:p-[60px] h-full">
+          <div className="h-[120px] flex items-center mb-[40px]">
             <img
               src="/images/msgport.svg"
               alt="msgport"
@@ -100,8 +100,8 @@ export default function Project() {
             </a>
           </div>
         </div>
-        <div className="flex-grow flex-shrink-0 sm:w-[50%] p-[100px_20px] sm:p-[60px] h-full">
-          <div className="py-[15px] mb-[40px]">
+        <div className="flex-grow flex flex-col self-stretch flex-shrink-0 sm:w-[50%] p-[100px_20px] sm:p-[60px] h-full">
+          <div className="h-[120px] flex items-center mb-[40px]">
             <img
               src="/images/xapi.svg"
               alt="xapi"
