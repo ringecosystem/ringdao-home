@@ -14,7 +14,7 @@ export default function Program() {
           autoPlay
           muted
           loop
-          className="w-[436px] h-[436px]"
+          className="w-[300px] h-[300px] lg:w-[436px] lg:h-[436px]"
         />
         <div className="flex flex-col gap-[20px] justify-center">
           <h2 className="text-[30px] leading-[38px] font-[600]">
@@ -65,7 +65,7 @@ export default function Program() {
           autoPlay
           muted
           loop
-          className="w-[436px] h-[436px]"
+          className="w-[300px] h-[300px] lg:w-[436px] lg:h-[436px]"
         />
       </div>
       <div className="sm:flex gap-[60px] border-b-solid border-b-[1px] border-b-black p-[60px]">
@@ -74,7 +74,7 @@ export default function Program() {
           autoPlay
           muted
           loop
-          className="w-[436px] h-[436px]"
+          className="w-[300px] h-[300px] lg:w-[436px] lg:h-[436px]"
         />
         <div className="flex flex-col gap-[20px] justify-center">
           <h2 className="text-[30px] leading-[38px] font-[600]">Grant</h2>

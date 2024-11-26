@@ -10,7 +10,7 @@ export default function Header() {
         alt="Ring DAO"
         className="w-[86px] h-[20px] s:w-[129px] sm:h-[30px] object-contain"
       />
-      <div className="hidden sm:flex items-center gap-[40px] text-[14px]">
+      <div className="hidden sm:flex items-center sm:gap-[20px] lg:gap-[40px] text-[14px]">
         {data.menu.map((item: any, index: number) => (
           <a key={item.name + item.url + "menu"} href={item.url}>
             <p>{item.name}</p>

@@ -7,13 +7,13 @@ export default function Hero() {
         muted
         autoPlay
         loop
-        className="w-[346px] h-[346px] sm:w-[496px] sm:h-[496px]"
+        className="w-[346px] h-[346px] sm:w-[300px] sm:h-[300px] lg:w-[496px] lg:h-[496px]"
       />
       <div className="flex flex-col items-center sm:items-start">
-        <h2 className="text-[24px] sm:text-[30px] font-[300] leading-[30px] sm:leading-[38px]">
+        <h2 className="text-[24px] lg:text-[30px] font-[300] leading-[30px] sm:leading-[38px]">
           Empowering Chains to
         </h2>
-        <h1 className="text-[40px] sm:text-[60px] font-bold  leading-[51px] sm:leading-[77px] mb-[20px]">
+        <h1 className="text-[40px] lg:text-[60px] font-bold  leading-[51px] sm:leading-[77px] mb-[20px]">
           Communicate
         </h1>
         <p className="text-[14px] sm:text-[16px] leading-[22px] sm:leading-[25.6px] text-center sm:text-left">
