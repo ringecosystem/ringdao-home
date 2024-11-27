@@ -28,7 +28,7 @@ export default function Program() {
             vote on it.
           </p>
           <a
-            href="https://www.tally.xyz/gov/ringdao"
+            href="https://snapshot.box/#/s:ring-dao.eth"
             target="_blank"
             className="cs-buttonHover text-[16px] flex justify-center items-center gap-[10px] w-fit leading-[42px] pl-[15px] pr-[10px] h-[42px] rounded-[21px] border-[1px] border-solid border-black"
           >
