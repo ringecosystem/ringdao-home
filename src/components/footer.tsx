@@ -13,7 +13,7 @@ export default function Footer() {
             className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] block"
           >
             <img
-              src="/icons/x.svg"
+              src="/icons/x-icon.svg"
               alt="ringdao x"
               className="w-full h-full bg-contain"
             />
@@ -23,8 +23,8 @@ export default function Footer() {
             className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] block"
           >
             <img
-              src="/icons/telegram.svg"
-              alt="ringdao x"
+              src="/icons/telegram-icon.svg"
+              alt="ringdao telegram"
               className="w-full h-full bg-contain"
             />
           </a>
@@ -33,8 +33,8 @@ export default function Footer() {
             className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] block"
           >
             <img
-              src="/icons/github.svg"
-              alt="ringdao x"
+              src="/icons/github-icon.svg"
+              alt="ringdao github"
               className="w-full h-full bg-contain"
             />
           </a>
@@ -43,8 +43,8 @@ export default function Footer() {
             className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] block"
           >
             <img
-              src="/icons/discord.svg"
-              alt="ringdao x"
+              src="/icons/discord-icon.svg"
+              alt="ringdao discord"
               className="w-full h-full bg-contain"
             />
           </a>
