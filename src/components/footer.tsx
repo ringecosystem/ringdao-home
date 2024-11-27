@@ -10,20 +10,44 @@ export default function Footer() {
         <div className="flex justify-end gap-[20px] mb-[20px] sm:mb-[10px]">
           <a
             href="https://x.com/ringecosystem"
-            className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] block bg-[url('/icons/x.svg')] bg-center bg-no-repeat bg-contain"
-          />
+            className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] block"
+          >
+            <img
+              src="/icons/x.svg"
+              alt="ringdao x"
+              className="w-full h-full bg-contain"
+            />
+          </a>
           <a
             href="https://t.me/ringecosystem"
-            className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] block bg-[url('/icons/telegram.svg')] bg-center bg-no-repeat bg-contain"
-          />
+            className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] block"
+          >
+            <img
+              src="/icons/telegram.svg"
+              alt="ringdao x"
+              className="w-full h-full bg-contain"
+            />
+          </a>
           <a
             href="https://github.com/ringecosystem/"
-            className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] block bg-[url('/icons/github.svg')] bg-center bg-no-repeat bg-contain"
-          />
+            className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] block"
+          >
+            <img
+              src="/icons/github.svg"
+              alt="ringdao x"
+              className="w-full h-full bg-contain"
+            />
+          </a>
           <a
             href="https://discord.gg/BhNbKWWfGV"
-            className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] block bg-[url('/icons/discord.svg')] bg-center bg-no-repeat bg-contain"
-          />
+            className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] block"
+          >
+            <img
+              src="/icons/discord.svg"
+              alt="ringdao x"
+              className="w-full h-full bg-contain"
+            />
+          </a>
         </div>
         <p className="text-[16px] leading-[26px]">2024 powered by RingDAO</p>
       </div>
