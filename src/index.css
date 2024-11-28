@@ -30,8 +30,9 @@
 html {
   font-family: EuclidCircularA;
   overflow-x: hidden;
-  background-color: #000;
+  background-color: #fff;
   width: 100vw;
+  box-sizing: border-box;
 }
 body {
   overflow: hidden;
@@ -56,4 +57,18 @@ body {
 *::-webkit-media-controls-start-playback-button {
   display: none !important;
   -webkit-appearance: none;
+}
+
+.cs-buttonHover:hover {
+  background-color: black;
+  color: white;
+}
+
+.cs-buttonHover:hover > span {
+  border-color: white;
+}
+
+.cs-buttonHover,
+.cs-buttonHover > span {
+  transition-duration: 200ms;
 }

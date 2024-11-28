@@ -1,0 +1,20 @@
+{
+  "menu": [
+    {
+      "name": "About RING",
+      "url": "#about"
+    },
+    {
+      "name": "Project",
+      "url": "#project"
+    },
+    {
+      "name": "Program",
+      "url": "#program"
+    },
+    {
+      "name": "Roadmap",
+      "url": "https://ringdao.notion.site/10daad1d671e80a48e04edd0917f4be6?v=fffaad1d671e81cd9321000c79aeec2c&pvs=74"
+    }
+  ]
+}
