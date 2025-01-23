@@ -1,0 +1,14 @@
+<svg width="87" height="88" viewBox="0 0 87 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#bgblur_0_2668_44_clip_path)" data-figma-skip-parse="true"><foreignObject x="-59.75" y="-59.25" width="206.5" height="206.5"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(30px);height:100%;width:100%"></div></foreignObject></g><g data-figma-bg-blur-radius="60">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 1.5H29.3298L32.1628 35.5028L1 29.8357V1.5Z" stroke="black" stroke-width="1.5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1.00063 58.1643L32.1634 35.4957L29.3304 86.5H1.00063V58.1643Z" stroke="black" stroke-width="1.5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M57.669 1.5H85.9987V29.8357L32.1722 35.5028L57.669 1.5Z" stroke="black" stroke-width="1.5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M32.1734 35.4957L86 58.1643V86.5H57.6702L32.1734 35.4957Z" stroke="black" stroke-width="1.5"/>
+</g>
+<defs>
+<clipPath id="bgblur_0_2668_44_clip_path"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 1.5H29.3298L32.1628 35.5028L1 29.8357V1.5Z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1.00063 58.1643L32.1634 35.4957L29.3304 86.5H1.00063V58.1643Z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M57.669 1.5H85.9987V29.8357L32.1722 35.5028L57.669 1.5Z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M32.1734 35.4957L86 58.1643V86.5H57.6702L32.1734 35.4957Z"/>
+</clipPath></defs>
+</svg>
