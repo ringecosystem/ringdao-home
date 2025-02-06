@@ -34,6 +34,7 @@ html {
   width: 100vw;
   box-sizing: border-box;
 }
+
 body {
   overflow: hidden;
 }
@@ -43,32 +44,12 @@ body {
   -webkit-appearance: none;
 }
 
-/* Old shadow dom for play button */
-
 *::-webkit-media-controls-play-button {
   display: none !important;
   -webkit-appearance: none;
 }
 
-/* New shadow dom for play button */
-
-/* This one works! */
-
 *::-webkit-media-controls-start-playback-button {
   display: none !important;
   -webkit-appearance: none;
-}
-
-.cs-buttonHover:hover {
-  background-color: black;
-  color: white;
-}
-
-.cs-buttonHover:hover > span {
-  border-color: white;
-}
-
-.cs-buttonHover,
-.cs-buttonHover > span {
-  transition-duration: 200ms;
 }

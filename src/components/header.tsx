@@ -18,7 +18,7 @@ export default function Header() {
         ))}
         <button
           onClick={() =>
-            window.open("https://snapshot.box/#/s:ring-dao.eth", "_blank")
+            window.open("https://www.tally.xyz/gov/ringdao", "_blank")
           }
           className="bg-black text-white h-[38px] rounded-[19px] px-[15px]"
         >

@@ -5,12 +5,16 @@
       "url": "#about"
     },
     {
-      "name": "Project",
-      "url": "#project"
+      "name": "Application",
+      "url": "#application"
     },
     {
-      "name": "Program",
-      "url": "#program"
+      "name": "Technology",
+      "url": "#technology"
+    },
+    {
+      "name": "Collaboration",
+      "url": "#collaboration"
     },
     {
       "name": "Roadmap",

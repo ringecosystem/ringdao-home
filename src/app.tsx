@@ -1,21 +1,21 @@
-import About from "./components/about";
-import Footer from "./components/footer";
-import Header from "./components/header";
-import Hero from "./components/hero";
-import Program from "./components/program";
-import Project from "./components/project";
-import useWidth from "./hooks/useWidth";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Application from "./components/Application";
+import Technology from "./components/Technology";
+import Collaboration from "./components/Collaboration";
+import Footer from "./components/Footer";
 
 export function App() {
-  const width = useWidth();
   return (
     <div className="flex bg-white">
       <div className="w-full sm:w-[1240px] mx-auto border-[#585858] border-[1px] border-x">
         <Header />
         <Hero />
         <About />
-        <Project />
-        <Program />
+        <Application />
+        <Technology />
+        <Collaboration />
         <Footer />
       </div>
     </div>
