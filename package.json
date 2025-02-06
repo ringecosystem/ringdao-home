@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:dev": "vite build --mode development",
     "preview": "vite preview"
   },
   "dependencies": {
+    "lovable-tagger": "^1.0.19",
     "preact": "^10.22.0"
   },
   "devDependencies": {
