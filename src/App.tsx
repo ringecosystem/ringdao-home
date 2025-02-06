@@ -4,6 +4,7 @@ import About from "./components/About";
 import Application from "./components/Application";
 import Technology from "./components/Technology";
 import Collaboration from "./components/Collaboration";
+import Partner from "./components/Partner";
 import Footer from "./components/Footer";
 
 export function App() {
@@ -16,6 +17,7 @@ export function App() {
         <Application />
         <Technology />
         <Collaboration />
+        <Partner />
         <Footer />
       </div>
     </div>
