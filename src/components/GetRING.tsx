@@ -28,7 +28,7 @@ import { CowSwapWidget, CowSwapWidgetParams, TradeType } from '@cowprotocol/widg
           TradeType.ADVANCED,
           TradeType.YIELD
       ],
-      "theme": "dark", // light/dark or provide your own color palette
+      "theme": "light", // light/dark or provide your own color palette
       "standaloneMode": false,
       "disableToastMessages": false,
       "disableProgressBar": false,
@@ -49,7 +49,7 @@ export default function GetRING() {
           <div className="absolute bg-black w-[15px] h-[15px] sm:w-[25px] sm:h-[25px] top-0 left-0" />
           <h2 className="text-[50px] leading-[64px] font-bold">Get RING</h2>
         </div>
-        <div className="sm:flex gap-[60px] border-b-solid border-b-[1px] border-b-black p-[60px]">
+        <div className="sm:flex border-b-solid border-b-[1px] border-b-black p-[60px]">
           <div className="flex flex-coljustify-center">
             <CowSwapWidget params={cowWidgetarams} />
           </div>
