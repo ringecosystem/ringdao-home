@@ -6,6 +6,7 @@ import Technology from "./components/Technology";
 import Collaboration from "./components/Collaboration";
 import Partner from "./components/Partner";
 import Footer from "./components/Footer";
+import GetRING from "./components/GetRING";
 
 export function App() {
   return (
@@ -18,6 +19,7 @@ export function App() {
         <Technology />
         <Collaboration />
         <Partner />
+        <GetRING />
         <Footer />
       </div>
     </div>
