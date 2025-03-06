@@ -53,7 +53,7 @@ export default function GetRING() {
           <h2 className="text-[50px] leading-[64px] font-bold">Get RING</h2>
         </div>
         <div className="border-b-solid border-b-[1px] border-b-black p-[60px]">
-          <div className="flex flex-coljustify-center">
+          <div className="flex flex-coljustify-center box-cow">
             <CowSwapWidget params={cowWidgetarams} />
           </div>
         </div>
