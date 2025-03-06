@@ -4,7 +4,7 @@ import { CowSwapWidget, CowSwapWidgetParams, TradeType } from '@cowprotocol/widg
 
     //  Fill this form https://cowprotocol.typeform.com/to/rONXaxHV once you pick your "appCode"
     const cowWidgetarams: CowSwapWidgetParams = {
-      "appCode": "My Cool App", // Name of your app (max 50 characters)
+      "appCode": "ringdao-cow-app", // Name of your app (max 50 characters)
       "width": "100%", // Width in pixels (or 100% to use all available space)
       "height": "640px",
       "chainId": 1, // 1 (Mainnet), 100 (Gnosis), 11155111 (Sepolia)
@@ -16,7 +16,7 @@ import { CowSwapWidget, CowSwapWidgetParams, TradeType } from '@cowprotocol/widg
       "tradeType": TradeType.SWAP, // TradeType.SWAP, TradeType.LIMIT or TradeType.ADVANCED
       "sell": { // Sell token. Optionally add amount for sell orders
           "asset": "USDC",
-          "amount": "100"
+          "amount": "1000"
       },
       "buy": { // Buy token. Optionally add amount for buy orders
           "asset": "RING",
@@ -29,7 +29,7 @@ import { CowSwapWidget, CowSwapWidgetParams, TradeType } from '@cowprotocol/widg
           TradeType.YIELD
       ],
       "theme": "light", // light/dark or provide your own color palette
-      "standaloneMode": false,
+      "standaloneMode": true,
       "disableToastMessages": false,
       "disableProgressBar": false,
       "hideBridgeInfo": false,
