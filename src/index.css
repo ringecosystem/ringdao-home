@@ -54,7 +54,6 @@ body {
   -webkit-appearance: none;
 }
 
-
-.box-cow {
-  background: red;
+.box-cow iframe {
+  max-height: 640px !important;
 }
