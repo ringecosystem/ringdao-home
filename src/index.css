@@ -53,3 +53,7 @@ body {
   display: none !important;
   -webkit-appearance: none;
 }
+
+.box-cow iframe {
+  max-height: 640px !important;
+}
