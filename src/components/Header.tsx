@@ -50,7 +50,7 @@ export default function Header() {
           ))}
           <button
             onClick={() =>
-              window.open("https://gov.ringdao.com ", "_blank")
+              window.open("https://gov.ringdao.com", "_blank")
             }
             className="bg-black text-white h-[38px] rounded-[19px] px-[15px]"
           >
