@@ -49,7 +49,7 @@ export default function Footer() {
             />
           </a>
         </div>
-        <p className="text-[16px] leading-[26px]">2024 powered by RingDAO</p>
+        <p className="text-[16px] leading-[26px]">2025 powered by RingDAO</p>
       </div>
     </section>
   );

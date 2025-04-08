@@ -25,7 +25,7 @@ export default function Partner() {
           </p>
           <div className="mt-auto flex justify-end">
             <a
-              href="https://ktondao.xyz"
+              href="https://gov.ktondao.xyz"
               target="_blank"
               className="cs-buttonHover text-[16px] flex justify-center items-center gap-[10px] w-fit leading-[42px] pl-[15px] pr-[10px] h-[42px] rounded-[21px] border-[1px] border-solid border-black"
             >
@@ -52,7 +52,7 @@ export default function Partner() {
           </p>
           <div className="mt-auto flex justify-end">
             <a
-              href="https://dcdao.box"
+              href="https://guild-gov.ringdao.com"
               target="_blank"
               className="cs-buttonHover text-[16px] flex justify-center items-center gap-[10px] w-fit leading-[42px] pl-[15px] pr-[10px] h-[42px] rounded-[21px] border-[1px] border-solid border-black"
             >
