@@ -37,11 +37,11 @@ export default function Partner() {
           </div>
         </div>
         <div className="flex-grow flex flex-col flex-shrink-0 sm:w-[50%] p-[100px_20px] sm:p-[60px]">
-          <div className="h-[120px] flex items-center mb-[40px]">
+          <div className="h-[150px] flex items-center mb-[40px]">
             <img
               src="/images/rcg.svg"
               alt="rcg"
-              className="w-[300px] h-[120px] object-contain object-left"
+              className="w-[350px] h-[140px] object-contain object-left"
             />
           </div>
           <h3 className="text-[30px] leading-[38px] mb-[10px] font-bold">
