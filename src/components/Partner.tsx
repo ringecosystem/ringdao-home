@@ -40,8 +40,8 @@ export default function Partner() {
           <div className="h-[120px] flex items-center mb-[40px]">
             <img
               src="/images/rcg.svg"
-              alt="dcdao"
-              className="w-[200px] h-[90px] object-contain object-left"
+              alt="rcg"
+              className="w-[300px] h-[120px] object-contain object-left"
             />
           </div>
           <h3 className="text-[30px] leading-[38px] mb-[10px] font-bold">
