@@ -39,7 +39,7 @@ export default function Partner() {
         <div className="flex-grow flex flex-col flex-shrink-0 sm:w-[50%] p-[100px_20px] sm:p-[60px]">
           <div className="h-[120px] flex items-center mb-[40px]">
             <img
-              src="/images/dcdao.svg"
+              src="/images/rcg.svg"
               alt="dcdao"
               className="w-[200px] h-[90px] object-contain object-left"
             />
