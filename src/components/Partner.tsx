@@ -45,10 +45,10 @@ export default function Partner() {
             />
           </div>
           <h3 className="text-[30px] leading-[38px] mb-[10px] font-bold">
-            DCDAO
+            RCG
           </h3>
           <p className="text-[16px] leading-[25px] mb-[20px]">
-            Darwinia Community DAO, DCDAO welcomes anyone striving to innovate in Web3.
+            The RingDAO Community Guild welcomes you to our active community.
           </p>
           <div className="mt-auto flex justify-end">
             <a
