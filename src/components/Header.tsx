@@ -63,7 +63,7 @@ export default function Header() {
             className="w-[30px] h-[30px] block bg-[url('/icons/x.svg')] bg-center bg-no-repeat bg-contain"
           />
           <a
-            href="https://t.me/ringecosystem"
+            href="https://t.me/RingDAO_Hub"
             className="w-[30px] h-[30px] block bg-[url('/icons/telegram.svg')] bg-center bg-no-repeat bg-contain"
           />
           <a
@@ -71,7 +71,7 @@ export default function Header() {
             className="w-[30px] h-[30px] block bg-[url('/icons/github.svg')] bg-center bg-no-repeat bg-contain"
           />
           <a
-            href="https://discord.gg/BhNbKWWfGV"
+            href="https://discord.gg/RingDAO"
             className="w-[30px] h-[30px] block bg-[url('/icons/discord.svg')] bg-center bg-no-repeat bg-contain"
           />
         </div>
