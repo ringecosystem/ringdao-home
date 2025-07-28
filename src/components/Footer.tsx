@@ -19,7 +19,7 @@ export default function Footer() {
             />
           </a>
           <a
-            href="https://t.me/ringecosystem"
+            href="https://t.me/RingDAO_Hub"
             className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] block"
           >
             <img
@@ -39,7 +39,7 @@ export default function Footer() {
             />
           </a>
           <a
-            href="https://discord.gg/BhNbKWWfGV"
+            href="https://discord.gg/RingDAO"
             className="w-[30px] h-[30px] sm:w-[48px] sm:h-[48px] block"
           >
             <img
