@@ -21,10 +21,8 @@ export default function Application() {
             Helixbox Bridge
           </h3>
           <p className="text-[16px] leading-[25px] mb-[20px]">
-            A smart, AI-powered, and user-friendly Defi platform offering
-            seamless, non-custodial access to curated apps, multi-chain asset
-            management, investment tools, and automated trading for both
-            beginners and experts.
+            Helixbox Bridge provides a secure and efficient cross-chain bridge for seamless asset transfers between different blockchains. 
+            It serves as an entry point for multi-chain asset movement, enabling users to transfer assets quickly and with confidence.
           </p>
           <div className="mt-auto flex justify-end">
             <a
