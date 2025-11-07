@@ -18,7 +18,7 @@ export default function Application() {
             />
           </div>
           <h3 className="text-[30px] leading-[38px] mb-[10px] font-bold">
-            Helixbox
+            Helixbox Bridge
           </h3>
           <p className="text-[16px] leading-[25px] mb-[20px]">
             A smart, AI-powered, and user-friendly Defi platform offering
@@ -28,7 +28,7 @@ export default function Application() {
           </p>
           <div className="mt-auto flex justify-end">
             <a
-              href="https://helixbox.ai/"
+              href="https://bridge.helixbox.ai/"
               target="_blank"
               className="cs-buttonHover text-[16px] flex justify-center items-center gap-[10px] w-fit leading-[42px] pl-[15px] pr-[10px] h-[42px] rounded-[21px] border-[1px] border-solid border-black"
             >
