@@ -91,17 +91,17 @@ export default function Collaboration() {
           <h2 className="text-[30px] leading-[38px] font-[600]">Bug Bounty </h2>
           <p className="text-[16px] leading-[26px]">
             Web3 space is complex and vulnerable to hacking. We take
-            security very seriously. In addition to regular security audits, we
-            have integrated with Immunefi and rely on external security
-            researchers to find vulnerabilities in our system and keep it and
-            our assets safe.
+            security very seriously and welcome responsible vulnerability
+            reports from external security researchers. Please submit bug
+            reports as GitHub issues in the Ring Ecosystem collaboration
+            repository so they can be reviewed and tracked openly.
           </p>
           <a
-            href="https://immunefi.com/bug-bounty/ringdao/information/"
+            href="https://github.com/ringecosystem/collaboration"
             target="_blank"
             className="cs-buttonHover text-[16px] flex justify-center items-center gap-[10px] w-fit leading-[42px] pl-[15px] pr-[10px] h-[42px] rounded-[21px] border-[1px] border-solid border-black"
           >
-            View Immunefi
+            Submit Issue
             <span className="block w-[24px] h-[24px] rounded-full border-black border-[1px] border-solid leading-[22px] text-center">
               {">"}
             </span>
