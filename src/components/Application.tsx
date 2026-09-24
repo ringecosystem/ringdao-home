@@ -1,70 +1,96 @@
+import { links } from "../data/links";
+import Icon from "./Icon";
+import Link from "./Link";
+
 export default function Application() {
   return (
-    <>
-      <div
-        id="application"
-        className="p-[50px_20px] sm:p-[60px] relative border-b-solid border-b-black border-b-[1px]"
-      >
-        <div className="absolute bg-black w-[15px] h-[15px] sm:w-[25px] sm:h-[25px] top-0 left-0" />
-        <h2 className="text-[50px] leading-[64px] font-bold">Application</h2>
+    <section
+      id="application"
+      className="featured-section container section-space"
+      aria-labelledby="degov-title"
+    >
+      <div className="section-kicker">
+        <span>01 / OUR CURRENT FOCUS</span>
+        <span>FEATURED APPLICATION</span>
       </div>
-      <div className="sm:flex sm:h-[630px] lg:h-[600px] border-b-solid border-b-[1px] border-b-black">
-        <div className="flex-grow flex flex-col self-stretch flex-shrink-0 sm:w-[50%] border-b-solid border-b-[1px] sm:border-b-0 border-b-black border-r-0 sm:border-r-[1px] border-r-black border-r-solid p-[100px_20px] sm:p-[60px]">
-          <div className="h-[120px] flex items-center mb-[40px]">
-            <img
-              src="/images/helixbox.svg"
-              alt="helixbox"
-              className="w-[200px] h-[90px] object-contain object-left"
-            />
+      <div className="featured-panel">
+        <div className="featured-heading">
+          <div>
+            <div className="degov-brand">
+              <img src="/images/degov.svg" alt="" width="34" height="34" />
+              <span>DeGov AI</span>
+              <span className="featured-tag">GOVERNANCE, EVOLVED</span>
+            </div>
+            <h2 id="degov-title">
+              Run your DAO.
+              <br />
+              <span>Understand its decisions.</span>
+            </h2>
           </div>
-          <h3 className="text-[30px] leading-[38px] mb-[10px] font-bold">
-            Helixbox Bridge
-          </h3>
-          <p className="text-[16px] leading-[25px] mb-[20px]">
-            Helixbox Bridge provides a secure and efficient cross-chain bridge for seamless asset transfers between different blockchains. 
-            It serves as an entry point for multi-chain asset movement, enabling users to transfer assets quickly and with confidence.
-          </p>
-          <div className="mt-auto flex justify-end">
-            <a
-              href="https://bridge.helixbox.ai/"
-              target="_blank"
-              className="cs-buttonHover text-[16px] flex justify-center items-center gap-[10px] w-fit leading-[42px] pl-[15px] pr-[10px] h-[42px] rounded-[21px] border-[1px] border-solid border-black"
-            >
-              View Detail
-              <span className="block w-[24px] h-[24px] rounded-full border-black border-[1px] border-solid leading-[22px] text-center">
-                {">"}
-              </span>
-            </a>
+          <div className="featured-intro">
+            <p>
+              Tools for onchain governance. Data to understand the decisions
+              behind it. Built for communities, researchers, and AI agents.
+            </p>
+            <Link href={links.degov} className="button button-lime">
+              Discover DeGov AI <Icon name="external" />
+            </Link>
           </div>
         </div>
-        <div className="flex-grow flex flex-col flex-shrink-0 sm:w-[50%] p-[100px_20px] sm:p-[60px]">
-          <div className="h-[120px] flex items-center mb-[40px]">
-            <img
-              src="/images/degov.svg"
-              alt="degov"
-              className="w-[200px] h-[90px] object-contain object-left"
-            />
-          </div>
-          <h3 className="text-[30px] leading-[38px] mb-[10px] font-bold">
-            DeGov.AI
-          </h3>
-          <p className="text-[16px] leading-[25px] mb-[20px]">
-            Next-generation, open-source, cross-chain DAO application platform. It uses OpenZeppelin Governance for transparency and community involvement. With the XAccount DAO Tool, it enables easy governance across chains, working with platforms like Tally and Snapshot. It also uses AI to improve DAO management through better delegation and automation.
-          </p>
-          <div className="mt-auto flex justify-end">
-            <a
-              href="https://degov.ai/"
-              target="_blank"
-              className="cs-buttonHover text-[16px] flex justify-center items-center gap-[10px] w-fit leading-[42px] pl-[15px] pr-[10px] h-[42px] rounded-[21px] border-[1px] border-solid border-black"
-            >
-              View Detail
-              <span className="block w-[24px] h-[24px] rounded-full border-black border-[1px] border-solid leading-[22px] text-center">
-                {">"}
-              </span>
-            </a>
-          </div>
+        <div className="product-grid">
+          <article className="product-card">
+            <div className="product-card-top">
+              <Icon name="square" />
+              <span>01 — PARTICIPATE</span>
+            </div>
+            <h3>Square</h3>
+            <p>
+              Give your DAO an open-source home for proposals, delegation,
+              voting, and onchain execution.
+            </p>
+            <Link href={links.square} className="product-link">
+              Open Square <Icon name="external" />
+            </Link>
+          </article>
+          <article className="product-card">
+            <div className="product-card-top">
+              <Icon name="atlas" />
+              <span>02 — UNDERSTAND</span>
+            </div>
+            <h3>Atlas</h3>
+            <p>
+              Explore proposals, votes, and discussions across DAOs. Follow the
+              context around each decision.
+            </p>
+            <Link href={links.atlas} className="product-link">
+              Explore Atlas <Icon name="external" />
+            </Link>
+          </article>
+          <article className="product-card">
+            <div className="product-card-top">
+              <Icon name="code" />
+              <span>03 — BUILD</span>
+            </div>
+            <h3>Agent API & Skills</h3>
+            <p>
+              Bring governance data into AI workflows, with skills for research
+              and proposal security analysis grounded in sources.
+            </p>
+            <div className="agent-links">
+              <Link href={links.api} className="product-link">
+                Explore the API <Icon name="external" />
+              </Link>
+              <Link href={links.skills} className="skills-link">
+                Get skills <Icon name="external" />
+              </Link>
+            </div>
+          </article>
+        </div>
+        <div className="featured-footnote">
+          <span className="small-cross">+</span> From a community decision to a
+          record everyone can understand.
         </div>
       </div>
-    </>
+    </section>
   );
 }
