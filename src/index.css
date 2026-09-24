@@ -105,11 +105,6 @@ button:focus-visible {
   gap: 9px;
   color: #616c5d;
 }
-.small-cross {
-  font-size: 23px;
-  line-height: 1;
-  font-weight: 400;
-}
 .muted {
   color: var(--muted);
 }
@@ -251,9 +246,6 @@ button:focus-visible {
 .hero-copy {
   position: relative;
   z-index: 1;
-}
-.hero .eyebrow {
-  margin-bottom: 25px;
 }
 h1 {
   font-size: clamp(58px, 6.1vw, 88px);
@@ -1092,10 +1084,6 @@ h2 {
     font-size: 58px;
     letter-spacing: -3px;
   }
-  .hero .eyebrow {
-    font-size: 8px;
-    letter-spacing: 1px;
-  }
   .hero-description {
     font-size: 12px;
   }
@@ -1210,11 +1198,6 @@ h2 {
   }
   .hero-copy {
     width: 100%;
-  }
-  .hero .eyebrow {
-    font-size: 8px;
-    letter-spacing: 1px;
-    margin-bottom: 22px;
   }
   h1 {
     font-size: clamp(45px, 11.7vw, 66px);
@@ -1540,10 +1523,6 @@ h2 {
   }
   h1 {
     font-size: 43px;
-  }
-  .hero .eyebrow {
-    font-size: 7px;
-    letter-spacing: 0.8px;
   }
   .orbit-label {
     font-size: 9px;

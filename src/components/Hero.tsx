@@ -8,10 +8,6 @@ export default function Hero() {
     <section className="hero container" aria-labelledby="hero-title">
       <div className="hero-main">
         <div className="hero-copy">
-          <p className="eyebrow">
-            <span className="small-cross">+</span> A COMMUNITY-GOVERNED VENTURE
-            DAO
-          </p>
           <h1 id="hero-title">
             An ecosystem
             <br />
