@@ -51,10 +51,6 @@ export default function Technology() {
             Shared roots.
           </h2>
         </div>
-        <p>
-          Explore the networks and tools
-          <br className="desktop-break" /> connected to RingDAO.
-        </p>
       </div>
       <div className="ecosystem-grid">
         {projects.map((project) => (

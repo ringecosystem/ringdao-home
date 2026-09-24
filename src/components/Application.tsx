@@ -86,10 +86,6 @@ export default function Application() {
             </div>
           </article>
         </div>
-        <div className="featured-footnote">
-          <span className="small-cross">+</span> From a community decision to a
-          record everyone can understand.
-        </div>
       </div>
     </section>
   );
