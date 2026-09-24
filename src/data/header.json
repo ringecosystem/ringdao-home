@@ -1,24 +1,8 @@
 {
   "menu": [
-    {
-      "name": "About RING",
-      "url": "#about"
-    },
-    {
-      "name": "Application",
-      "url": "#application"
-    },
-    {
-      "name": "Technology",
-      "url": "#technology"
-    },
-    {
-      "name": "Collaboration",
-      "url": "#collaboration"
-    },
-    {
-      "name": "Roadmap",
-      "url": "https://ringdao.notion.site/10daad1d671e80a48e04edd0917f4be6?v=fffaad1d671e81cd9321000c79aeec2c&pvs=74"
-    }
+    { "name": "DeGov AI", "url": "#application" },
+    { "name": "Ecosystem", "url": "#technology" },
+    { "name": "Governance", "url": "#about" },
+    { "name": "Collaborate", "url": "#collaboration" }
   ]
 }

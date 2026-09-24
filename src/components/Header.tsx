@@ -1,81 +1,74 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "preact/hooks";
 import data from "../data/header.json";
+import { links } from "../data/links";
+import Icon from "./Icon";
+import Link from "./Link";
 
 export default function Header() {
-  const [showMenu, setShowMenu] = useState<boolean>(false);
+  const [open, setOpen] = useState(false);
+  const toggle = useRef<HTMLButtonElement>(null);
+  const header = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setOpen(false);
+        toggle.current?.focus();
+      }
+    };
+    const onPointerDown = (event: PointerEvent) => {
+      if (!header.current?.contains(event.target as Node)) setOpen(false);
+    };
+    document.addEventListener("keydown", onKeyDown);
+    document.addEventListener("pointerdown", onPointerDown);
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.removeEventListener("pointerdown", onPointerDown);
+    };
+  }, [open]);
+
   return (
-    <section className="flex items-center justify-between p-[20px] sm:p-[60px] border-b-[1px] border-b-solid border-b-black">
-      <img
-        src="/images/logo.svg"
-        alt="Ring DAO"
-        className="w-[86px] h-[20px] s:w-[129px] sm:h-[30px] object-contain"
-      />
-      <div className="hidden sm:flex items-center sm:gap-[20px] lg:gap-[40px] text-[14px]">
-        {data.menu.map((item: any, index: number) => (
-          <a key={item.name + item.url + "menu"} href={item.url}>
-            <p>{item.name}</p>
-          </a>
-        ))}
-        <button
-          onClick={() =>
-            window.open("https://gov.ringdao.com", "_blank")
-          }
-          className="bg-black text-white h-[38px] rounded-[19px] px-[15px]"
+    <header className="site-header" ref={header}>
+      <div className="container header-inner">
+        <a
+          className="brand"
+          href="#top"
+          aria-label="RingDAO home"
+          onClick={() => setOpen(false)}
         >
-          Submit Proposals
+          <img src="/images/logo.svg" width="130" height="30" alt="RingDAO" />
+        </a>
+        <button
+          className="menu-toggle"
+          ref={toggle}
+          type="button"
+          aria-expanded={open}
+          aria-controls="main-navigation"
+          aria-label={open ? "Close navigation" : "Open navigation"}
+          onClick={() => setOpen(!open)}
+        >
+          <Icon name={open ? "close" : "menu"} />
         </button>
-      </div>
-      <div
-        onClick={() => {
-          setShowMenu(!showMenu);
-        }}
-        className="flex sm:hidden flex-col gap-[3px]"
-      >
-        <div className="w-[17px] h-[3px] bg-black" />
-        <div className="w-[17px] h-[3px] bg-black" />
-        <div className="w-[17px] h-[3px] bg-black" />
-      </div>
-      <div
-        className={`fixed sm:hidden top-[62px] right-0 h-[calc(100vh-61px)] w-[100vw] py-[20px] flex flex-col items-center gap-[20px] bg-white z-[1000] duration-500 ${
-          showMenu ? "translate-x-0" : "translate-x-[100vw]"
-        }`}
-      >
-        <div className="flex flex-grow flex-col items-center justify-center gap-[68px]">
-          {data.menu.map((item: any, index: number) => (
-            <a key={item.name + item.url + "menu"} href={item.url}>
-              <p className="text-[16px] leading-[26px] font-[600]">
-                {item.name}
-              </p>
+        <nav
+          className="header-nav"
+          id="main-navigation"
+          aria-label="Main navigation"
+          data-open={open}
+        >
+          {data.menu.map((item) => (
+            <a key={item.url} href={item.url} onClick={() => setOpen(false)}>
+              {item.name}
             </a>
           ))}
-          <button
-            onClick={() =>
-              window.open("https://gov.ringdao.com", "_blank")
-            }
-            className="bg-black text-white h-[38px] rounded-[19px] px-[15px]"
+          <Link
+            className="button button-dark header-cta"
+            href={links.governance}
           >
-            Submit Proposals
-          </button>
-        </div>
-        <div className="flex justify-end gap-[20px] mb-[20px] flex-shrink-0">
-          <a
-            href="https://x.com/ringecosystem"
-            className="w-[30px] h-[30px] block bg-[url('/icons/x.svg')] bg-center bg-no-repeat bg-contain"
-          />
-          <a
-            href="https://t.me/RingDAO_Hub"
-            className="w-[30px] h-[30px] block bg-[url('/icons/telegram.svg')] bg-center bg-no-repeat bg-contain"
-          />
-          <a
-            href="https://github.com/ringecosystem/"
-            className="w-[30px] h-[30px] block bg-[url('/icons/github.svg')] bg-center bg-no-repeat bg-contain"
-          />
-          <a
-            href="https://discord.gg/RingDAO"
-            className="w-[30px] h-[30px] block bg-[url('/icons/discord.svg')] bg-center bg-no-repeat bg-contain"
-          />
-        </div>
+            Open governance <Icon name="external" />
+          </Link>
+        </nav>
       </div>
-    </section>
+    </header>
   );
 }

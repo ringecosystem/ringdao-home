@@ -1,63 +1,103 @@
-import { CowSwapWidget, CowSwapWidgetParams, TradeType } from '@cowprotocol/widget-react'
+import {
+  CowSwapWidget,
+  type CowSwapWidgetParams,
+  TradeType,
+} from "@cowprotocol/widget-react";
+import { useEffect, useRef } from "preact/hooks";
 
+// Pin the Ethereum contract: the symbol "RING" can resolve to unrelated tokens.
+// Metadata matches the ecosystem token list configured below.
+const ringToken = {
+  chainId: 1,
+  address: "0x9469d013805bffb7d3debe5e7839237e535ec483",
+  name: "Darwinia Network",
+  symbol: "RING",
+  decimals: 18,
+  logoURI: "https://assets.coingecko.com/coins/images/9443/thumb/RING.png",
+};
 
-
-    //  Fill this form https://cowprotocol.typeform.com/to/rONXaxHV once you pick your "appCode"
-    const cowWidgetarams: CowSwapWidgetParams = {
-      "appCode": "ringdao-cow-app", // Name of your app (max 50 characters)
-      "width": "100%", // Width in pixels (or 100% to use all available space)
-      "height": "640px",
-      "chainId": 1, // 1 (Mainnet), 100 (Gnosis), 11155111 (Sepolia)
-      "tokenLists": [ // All default enabled token lists. Also see https://tokenlists.org
-          "https://raw.githubusercontent.com/helixbox/silicon/refs/heads/main/definition/tokens/cow-widget.json",
-          "https://files.cow.fi/tokens/CowSwap.json",
-          "https://files.cow.fi/tokens/CoinGecko.json"
-      ],
-      "tradeType": TradeType.SWAP, // TradeType.SWAP, TradeType.LIMIT or TradeType.ADVANCED
-      "sell": { // Sell token. Optionally add amount for sell orders
-          "asset": "USDC",
-          "amount": "1000"
-      },
-      "buy": { // Buy token. Optionally add amount for buy orders
-          "asset": "RING",
-          "amount": "0"
-      },
-      "enabledTradeTypes": [ // TradeType.SWAP, TradeType.LIMIT and/or TradeType.ADVANCED
-          TradeType.SWAP,
-          TradeType.LIMIT,
-          TradeType.ADVANCED,
-          TradeType.YIELD
-      ],
-      "theme": { // light/dark or provide your own color palette
-        "baseTheme": "light",
-        "paper": "#fcfcfc"
-      },
-      "standaloneMode": true,
-      "disableToastMessages": false,
-      "disableProgressBar": false,
-      "hideBridgeInfo": false,
-      "hideOrdersTable": false,
-      "images": {},
-      "sounds": {},
-      "customTokens": []
-  }
+const cowWidgetParams: CowSwapWidgetParams = {
+  appCode: "ringdao-cow-app",
+  width: "100%",
+  height: "640px",
+  chainId: 1,
+  tokenLists: [
+    "https://raw.githubusercontent.com/helixbox/silicon/refs/heads/main/definition/tokens/cow-widget.json",
+    "https://files.cow.fi/tokens/CowSwap.json",
+    "https://files.cow.fi/tokens/CoinGecko.json",
+  ],
+  tradeType: TradeType.SWAP,
+  sell: { asset: "USDC", amount: "1000" },
+  buy: { asset: ringToken.address, amount: "0" },
+  enabledTradeTypes: [
+    TradeType.SWAP,
+    TradeType.LIMIT,
+    TradeType.ADVANCED,
+    TradeType.YIELD,
+  ],
+  theme: {
+    baseTheme: "light",
+    primary: "#315d3d",
+    background: "#fcfcfc",
+    paper: "#fcfcfc",
+    text: "#202b24",
+    danger: "#b93f37",
+    warning: "#94600b",
+    alert: "#94600b",
+    info: "#436c95",
+    success: "#2b773f",
+  },
+  standaloneMode: true,
+  disableToastMessages: false,
+  disableProgressBar: false,
+  hideBridgeInfo: false,
+  hideOrdersTable: false,
+  images: {},
+  sounds: {},
+  customTokens: [ringToken],
+};
 
 export default function GetRING() {
-    return (
-      <>
-        <div
-          id="get-ring"
-          className="p-[50px_20px] sm:p-[60px] relative border-b-solid border-b-black border-b-[1px]"
-        >
-          <div className="absolute bg-black w-[15px] h-[15px] sm:w-[25px] sm:h-[25px] top-0 left-0" />
-          <h2 className="text-[50px] leading-[64px] font-bold">Get RING</h2>
+  const widget = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const container = widget.current;
+    if (!container) return;
+
+    // The SDK creates its iframe asynchronously and has no title parameter.
+    const labelFrame = () => {
+      const frame = container.querySelector("iframe");
+      if (frame) frame.title = "CoW Swap — exchange tokens for RING";
+    };
+    const observer = new MutationObserver(labelFrame);
+    observer.observe(container, { childList: true, subtree: true });
+    labelFrame();
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div
+      className="swap-panel"
+      id="get-ring"
+      role="region"
+      aria-labelledby="swap-title"
+    >
+      <div className="swap-heading">
+        <div>
+          <h3 id="swap-title">Get RING</h3>
+          <p>Swap tokens. Join the ecosystem.</p>
         </div>
-        <div className="border-b-solid border-b-[1px] border-b-black p-[60px]">
-          <div className="flex flex-coljustify-center box-cow">
-            <CowSwapWidget params={cowWidgetarams} />
-          </div>
-        </div>
-      </>
-    );
-  }
-  
+        <span className="network-label">
+          <span />
+          Ethereum
+        </span>
+      </div>
+      <div className="swap-widget" ref={widget}>
+        <CowSwapWidget params={cowWidgetParams} />
+      </div>
+      <p className="swap-caption">
+        Powered by CoW Swap <span>Onchain, on your terms.</span>
+      </p>
+    </div>
+  );
+}
