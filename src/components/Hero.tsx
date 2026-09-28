@@ -12,7 +12,7 @@ export default function Hero() {
           <h1 id="hero-title" data-reveal>
             <Lines
               light={["An ecosystem", "governed by"]}
-              bold={["its community."]}
+              bold={["its community"]}
             />
           </h1>
           <p

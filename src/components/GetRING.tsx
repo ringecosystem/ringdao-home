@@ -87,7 +87,7 @@ export default function GetRING() {
       <div className="swap-heading">
         <div>
           <h3 id="swap-title">Get RING</h3>
-          <p>Swap tokens. Join the ecosystem.</p>
+          <p>Swap tokens. Join the ecosystem</p>
         </div>
         <span className="network-label">
           <span />

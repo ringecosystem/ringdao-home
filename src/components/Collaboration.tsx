@@ -13,7 +13,7 @@ export default function Collaboration() {
     >
       <div className="collaboration-copy">
         <h2 id="collaboration-title" data-reveal>
-          <Lines light={["Bring your ideas."]} bold={["Build what’s next."]} />
+          <Lines light={["Bring your ideas"]} bold={["Build what’s next"]} />
         </h2>
         <p
           className="section-description"

@@ -14,7 +14,7 @@ export default function About() {
       <div className="container governance-grid section-space">
         <div className="governance-copy">
           <h2 id="governance-title" data-reveal>
-            <Lines light={["Your voice."]} bold={["Our direction."]} />
+            <Lines light={["Your voice"]} bold={["Our direction"]} />
           </h2>
           <p
             className="section-description"

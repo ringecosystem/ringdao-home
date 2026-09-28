@@ -19,8 +19,8 @@ export default function Application() {
             </div>
             <h2 id="degov-title">
               <Lines
-                light={["Run your DAO."]}
-                bold={["Understand its decisions."]}
+                light={["Run your DAO"]}
+                bold={["Understand its decisions"]}
               />
             </h2>
           </div>

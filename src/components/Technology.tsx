@@ -48,7 +48,7 @@ export default function Technology() {
       <div className="section-heading">
         <div>
           <h2 id="ecosystem-title" data-reveal>
-            <Lines light={["Different tools."]} bold={["Shared roots."]} />
+            <Lines light={["Different tools"]} bold={["Shared roots"]} />
           </h2>
         </div>
       </div>
