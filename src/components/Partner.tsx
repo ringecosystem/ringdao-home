@@ -4,7 +4,7 @@ import Link from "./Link";
 
 export default function Partner() {
   return (
-    <div className="community" id="partner">
+    <div className="community" id="partner" data-reveal>
       <p className="eyebrow">COMMUNITY DAOS</p>
       <Link href={links.kton} className="community-link">
         <span className="community-logo">

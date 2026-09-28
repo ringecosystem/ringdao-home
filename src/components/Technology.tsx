@@ -1,5 +1,6 @@
 import { links } from "../data/links";
 import Icon from "./Icon";
+import Lines from "./Lines";
 import Link from "./Link";
 
 const projects = [
@@ -46,19 +47,18 @@ export default function Technology() {
     >
       <div className="section-heading">
         <div>
-          <h2 id="ecosystem-title">
-            Different tools.
-            <br />
-            <strong>Shared roots.</strong>
+          <h2 id="ecosystem-title" data-reveal>
+            <Lines light={["Different tools."]} bold={["Shared roots."]} />
           </h2>
         </div>
       </div>
       <div className="ecosystem-grid">
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <Link
             key={project.name}
             className="ecosystem-card"
             href={project.href}
+            reveal={index}
             label={`Explore ${project.name}`}
           >
             <div className="ecosystem-card-top">

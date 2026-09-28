@@ -78,6 +78,8 @@ export default function GetRING() {
   return (
     <div
       className="swap-panel"
+      data-reveal
+      style={{ "--i": 1 } as Record<string, number>}
       id="get-ring"
       role="region"
       aria-labelledby="swap-title"

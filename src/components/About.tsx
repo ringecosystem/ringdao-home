@@ -1,6 +1,7 @@
 import { links } from "../data/links";
 import GetRING from "./GetRING";
 import Icon from "./Icon";
+import Lines from "./Lines";
 import Link from "./Link";
 
 export default function About() {
@@ -12,16 +13,18 @@ export default function About() {
     >
       <div className="container governance-grid section-space">
         <div className="governance-copy">
-          <h2 id="governance-title">
-            Your voice.
-            <br />
-            <strong>Our direction.</strong>
+          <h2 id="governance-title" data-reveal>
+            <Lines light={["Your voice."]} bold={["Our direction."]} />
           </h2>
-          <p className="section-description">
+          <p
+            className="section-description"
+            data-reveal
+            style={{ "--i": 2 } as Record<string, number>}
+          >
             RING is RingDAO’s governance token. Through open discussion and
             onchain governance, the community shapes how the ecosystem develops.
           </p>
-          <ol className="governance-steps">
+          <ol className="governance-steps" data-reveal>
             <li>
               <span>01</span>
               <div>
@@ -44,7 +47,11 @@ export default function About() {
               </div>
             </li>
           </ol>
-          <div className="button-row governance-actions">
+          <div
+            className="button-row governance-actions"
+            data-reveal
+            style={{ "--i": 1 } as Record<string, number>}
+          >
             <Link href={links.governance} className="button button-dark">
               Open governance <Icon name="external" />
             </Link>
