@@ -150,11 +150,6 @@ export default function Orbit() {
         <strong>Builders & contributors</strong>
         <span>Ideas into applications</span>
       </div>
-      <div className="orbit-center">
-        Community
-        <br />
-        at the core
-      </div>
     </div>
   );
 }

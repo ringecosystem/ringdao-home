@@ -260,9 +260,17 @@ button:focus-visible {
 }
 h1 {
   font-size: clamp(58px, 6.1vw, 88px);
-  line-height: 1.055;
+  line-height: 1.06;
   font-weight: 300;
   letter-spacing: -4px;
+}
+/* Optical leading: line 2 is mostly x-height, while line 3's bold i/t rise
+   into line 2's g/y descenders, so tighten 1-2 and open 2-3. */
+h1 .line:nth-child(2) {
+  margin-top: -0.035em;
+}
+h1 .line:nth-child(3) {
+  margin-top: 0.075em;
 }
 h1 strong {
   font-weight: 700;
@@ -314,17 +322,6 @@ h1 strong {
 .orbit-note-builders {
   left: 0;
   top: calc(85.8% + 10px);
-}
-.orbit-center {
-  position: absolute;
-  left: 50%;
-  top: 48.8%;
-  transform: translate(-50%, -50%);
-  font-size: 11px;
-  line-height: 1.45;
-  text-align: center;
-  font-weight: 500;
-  letter-spacing: 0.2px;
 }
 /* Featured application */
 .featured-section {
@@ -1514,14 +1511,10 @@ h2 .line {
   animation: draw 1.1s var(--ease-in-out) 1s forwards;
 }
 .motion .orbit-anchor,
-.motion .orbit-note,
-.motion .orbit-center {
+.motion .orbit-note {
   opacity: 0;
   animation: fade-up 0.9s var(--ease-out) forwards;
   animation-delay: 1.5s;
-}
-.motion .orbit-center {
-  animation-delay: 1.2s;
 }
 .motion .orbit-note-builders {
   animation-delay: 1.7s;
@@ -1550,9 +1543,6 @@ h2 .line {
     opacity: 1;
     translate: 0 0;
   }
-}
-.orbit-center {
-  translate: 0 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
