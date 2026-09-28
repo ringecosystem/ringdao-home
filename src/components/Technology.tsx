@@ -8,30 +8,32 @@ const projects = [
     category: "NETWORK",
     description: "An EVM-compatible network where the RingDAO ecosystem began.",
     href: links.darwinia,
-    logo: "/images/darwinia.svg",
-    logoClass: "darwinia-logo",
+    logo: "/images/marks/darwinia.svg",
+    logoClass: "mark-darwinia",
   },
   {
     name: "Darwinia Bridge",
     category: "BRIDGE",
     description: "An interface for cross-chain asset transfers.",
     href: links.bridge,
+    logo: "/images/marks/bridge.svg",
+    logoClass: "mark-bridge",
   },
   {
     name: "Msgport",
     category: "MESSAGING",
     description: "Programmable messaging between applications across chains.",
     href: links.msgport,
-    logo: "/images/msgport.svg",
-    logoClass: "msgport-logo",
+    logo: "/images/marks/msgport.svg",
+    logoClass: "mark-msgport",
   },
   {
     name: "XAPI",
     category: "ORACLES",
     description: "An open-source project for programmable cross-chain oracles.",
     href: links.xapi,
-    logo: "/images/xapi.svg",
-    logoClass: "xapi-logo",
+    logo: "/images/marks/xapi.svg",
+    logoClass: "mark-xapi",
   },
 ];
 
@@ -39,16 +41,15 @@ export default function Technology() {
   return (
     <section
       id="technology"
-      className="ecosystem-section container section-space"
+      className="ecosystem-section container section-space ruled"
       aria-labelledby="ecosystem-title"
     >
       <div className="section-heading">
         <div>
-          <p className="eyebrow">02 / THE WIDER ECOSYSTEM</p>
           <h2 id="ecosystem-title">
             Different tools.
             <br />
-            Shared roots.
+            <strong>Shared roots.</strong>
           </h2>
         </div>
       </div>
@@ -61,14 +62,13 @@ export default function Technology() {
             label={`Explore ${project.name}`}
           >
             <div className="ecosystem-card-top">
-              <span
-                className={`project-logo ${project.logoClass || "bridge-logo"}`}
-              >
-                {project.logo ? (
-                  <img src={project.logo} alt="" loading="lazy" />
-                ) : (
-                  <Icon name="bridge" />
-                )}
+              <span className="project-logo">
+                <img
+                  src={project.logo}
+                  alt=""
+                  loading="lazy"
+                  className={project.logoClass}
+                />
               </span>
               <Icon name="external" />
             </div>

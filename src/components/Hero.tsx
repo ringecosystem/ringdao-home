@@ -31,24 +31,6 @@ export default function Hero() {
         </div>
         <Orbit />
       </div>
-      <div className="hero-footer">
-        <a className="current-focus" href="#application">
-          <span className="focus-symbol">
-            <img src="/images/degov.svg" alt="" width="24" height="24" />
-          </span>
-          <span>
-            <span className="muted">Our current focus</span>
-            <strong>DeGov AI</strong>
-          </span>
-          <Icon name="arrow" />
-        </a>
-        <a className="scroll-link" href="#application">
-          Discover the ecosystem{" "}
-          <span>
-            <Icon name="down" />
-          </span>
-        </a>
-      </div>
     </section>
   );
 }

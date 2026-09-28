@@ -1,5 +1,3 @@
-import Icon from "./Icon";
-
 // A static wireframe torus: many contributions forming one ring.
 function project(u: number, v: number) {
   const x = (138 + 57 * Math.cos(v)) * Math.cos(u);
@@ -23,72 +21,53 @@ function ringPath(fixed: number, meridian: boolean) {
   );
 }
 
-const meridians = Array.from({ length: 56 }, (_, i) =>
-  ringPath((i / 56) * Math.PI * 2, true),
+const meridians = Array.from({ length: 32 }, (_, i) =>
+  ringPath(((i + 0.5) / 32) * Math.PI * 2, true),
 );
-const parallels = Array.from({ length: 18 }, (_, i) =>
-  ringPath((i / 18) * Math.PI * 2, false),
+const parallels = Array.from({ length: 8 }, (_, i) =>
+  ringPath((i / 8) * Math.PI * 2, false),
 );
 
 export default function Orbit() {
   return (
     <div className="orbit-art" aria-hidden="true">
-      <div className="orbit-coordinate orbit-coordinate-top">
-        A SHARED DIRECTION
-      </div>
       <svg className="orbit-drawing" viewBox="0 0 520 520" fill="none">
-        <defs>
-          <radialGradient id="orbit-halo">
-            <stop stopColor="#d7edb4" stopOpacity="0.82" />
-            <stop offset="1" stopColor="#e8eedc" stopOpacity="0" />
-          </radialGradient>
-        </defs>
-        <circle cx="260" cy="260" r="253" fill="url(#orbit-halo)" />
         <circle
           cx="260"
           cy="260"
-          r="230"
-          stroke="#cad1bd"
-          strokeDasharray="2 7"
+          r="232"
+          stroke="#c8c8c8"
+          strokeDasharray="2 6"
         />
-        <circle cx="260" cy="260" r="194" stroke="#d8decd" />
-        <path d="M260 12v42m0 412v42M12 260h42m412 0h42" stroke="#a6b39c" />
-        <g className="orbit-wireframe" stroke="#26442f" strokeWidth="0.8">
+        <g className="orbit-wireframe" stroke="#000" strokeWidth="0.6">
           {meridians.map((path, i) => (
-            <path key={`m${i}`} d={path} opacity="0.57" />
+            <path key={`m${i}`} d={path} opacity="0.5" />
           ))}
           {parallels.map((path, i) => (
-            <path key={`p${i}`} d={path} opacity="0.5" />
+            <path key={`p${i}`} d={path} opacity="0.4" />
           ))}
         </g>
-        <circle cx="430" cy="106" r="5" fill="#244b33" />
-        <circle cx="71" cy="391" r="5" fill="#244b33" />
-        <circle cx="438" cy="405" r="3" fill="#6a7c56" />
+        {/* Annotation leaders, drafted like a technical drawing */}
+        <g stroke="#000" strokeWidth="0.8">
+          <path d="M391 144 L436 66 H520" />
+          <path d="M129 364 L84 446 H0" />
+        </g>
+        <rect x="387" y="140" width="8" height="8" fill="#000" />
+        <rect x="125" y="360" width="8" height="8" fill="#000" />
+        <circle cx="436" cy="409" r="4" fill="#ff0083" />
       </svg>
-      <div className="orbit-label orbit-label-holders">
-        <span className="orbit-label-icon">
-          <Icon name="community" />
-        </span>
-        <span>
-          RING holders<small>A voice in the ecosystem</small>
-        </span>
+      <div className="orbit-note orbit-note-holders">
+        <strong>RING holders</strong>
+        <span>A voice in the ecosystem</span>
       </div>
-      <div className="orbit-label orbit-label-builders">
-        <span className="orbit-label-icon">
-          <Icon name="code" />
-        </span>
-        <span>
-          Builders & contributors<small>Ideas into applications</small>
-        </span>
+      <div className="orbit-note orbit-note-builders">
+        <strong>Builders & contributors</strong>
+        <span>Ideas into applications</span>
       </div>
       <div className="orbit-center">
-        <span className="orbit-center-dot" />
         Community
         <br />
         at the core
-      </div>
-      <div className="orbit-coordinate orbit-coordinate-bottom">
-        MANY CONTRIBUTORS. ONE ECOSYSTEM.
       </div>
     </div>
   );

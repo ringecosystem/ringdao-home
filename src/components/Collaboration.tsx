@@ -7,15 +7,14 @@ export default function Collaboration() {
   return (
     <section
       id="collaboration"
-      className="collaboration-section container section-space"
+      className="collaboration-section container section-space ruled"
       aria-labelledby="collaboration-title"
     >
       <div className="collaboration-copy">
-        <p className="eyebrow">04 / BUILT TOGETHER</p>
         <h2 id="collaboration-title">
           Bring your ideas.
           <br />
-          Build what’s next.
+          <strong>Build what’s next.</strong>
         </h2>
         <p className="section-description">
           Have a project, an idea, or expertise to contribute? Explore

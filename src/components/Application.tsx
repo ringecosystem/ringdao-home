@@ -6,20 +6,15 @@ export default function Application() {
   return (
     <section
       id="application"
-      className="featured-section container section-space"
+      className="featured-section container section-space ruled"
       aria-labelledby="degov-title"
     >
-      <div className="section-kicker">
-        <span>01 / OUR CURRENT FOCUS</span>
-        <span>FEATURED APPLICATION</span>
-      </div>
       <div className="featured-panel">
         <div className="featured-heading">
           <div>
             <div className="degov-brand">
               <img src="/images/degov.svg" alt="" width="34" height="34" />
               <span>DeGov AI</span>
-              <span className="featured-tag">GOVERNANCE, EVOLVED</span>
             </div>
             <h2 id="degov-title">
               Run your DAO.
@@ -41,7 +36,6 @@ export default function Application() {
           <article className="product-card">
             <div className="product-card-top">
               <Icon name="square" />
-              <span>01 — PARTICIPATE</span>
             </div>
             <h3>Square</h3>
             <p>
@@ -55,7 +49,6 @@ export default function Application() {
           <article className="product-card">
             <div className="product-card-top">
               <Icon name="atlas" />
-              <span>02 — UNDERSTAND</span>
             </div>
             <h3>Atlas</h3>
             <p>
@@ -69,7 +62,6 @@ export default function Application() {
           <article className="product-card">
             <div className="product-card-top">
               <Icon name="code" />
-              <span>03 — BUILD</span>
             </div>
             <h3>Agent API & Skills</h3>
             <p>

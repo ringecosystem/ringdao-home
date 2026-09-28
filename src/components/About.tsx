@@ -10,13 +10,12 @@ export default function About() {
       className="governance-section"
       aria-labelledby="governance-title"
     >
-      <div className="container governance-grid section-space">
+      <div className="container governance-grid section-space ruled">
         <div className="governance-copy">
-          <p className="eyebrow">03 / RING & GOVERNANCE</p>
           <h2 id="governance-title">
             Your voice.
             <br />
-            Our direction.
+            <strong>Our direction.</strong>
           </h2>
           <p className="section-description">
             RING is RingDAO’s governance token. Through open discussion and
