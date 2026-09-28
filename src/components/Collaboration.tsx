@@ -7,7 +7,7 @@ export default function Collaboration() {
   return (
     <section
       id="collaboration"
-      className="collaboration-section container section-space ruled"
+      className="collaboration-section container section-space"
       aria-labelledby="collaboration-title"
     >
       <div className="collaboration-copy">

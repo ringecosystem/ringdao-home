@@ -41,7 +41,7 @@ export default function Technology() {
   return (
     <section
       id="technology"
-      className="ecosystem-section container section-space ruled"
+      className="ecosystem-section container section-space"
       aria-labelledby="ecosystem-title"
     >
       <div className="section-heading">

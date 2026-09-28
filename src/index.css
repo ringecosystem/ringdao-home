@@ -89,20 +89,6 @@ button:focus-visible {
 .section-space {
   padding-block: 96px;
 }
-/* Hairline section rule with the square anchor from the original site */
-.ruled {
-  position: relative;
-  border-top: 1px solid var(--rule);
-}
-.ruled::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 16px;
-  height: 16px;
-  background: #000;
-}
 .icon {
   width: 20px;
   height: 20px;
@@ -342,9 +328,8 @@ h1 > span {
 }
 /* Featured application */
 .featured-section {
-  margin-top: 40px;
-  padding-top: 52px;
-  padding-bottom: 96px;
+  padding-top: 16px;
+  padding-bottom: 0;
 }
 .featured-panel {
   background: var(--forest);
@@ -1110,13 +1095,8 @@ h2 span {
     align-self: center;
   }
             .featured-section {
-    margin-top: 24px;
-    padding-top: 40px;
-    padding-bottom: 64px;
-  }
-  .ruled::before {
-    width: 12px;
-    height: 12px;
+    padding-top: 8px;
+    padding-bottom: 0;
   }
   .featured-panel {
     border-radius: 0;

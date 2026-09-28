@@ -10,7 +10,7 @@ export default function About() {
       className="governance-section"
       aria-labelledby="governance-title"
     >
-      <div className="container governance-grid section-space ruled">
+      <div className="container governance-grid section-space">
         <div className="governance-copy">
           <h2 id="governance-title">
             Your voice.

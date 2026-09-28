@@ -6,7 +6,7 @@ export default function Application() {
   return (
     <section
       id="application"
-      className="featured-section container section-space ruled"
+      className="featured-section container section-space"
       aria-labelledby="degov-title"
     >
       <div className="featured-panel">
