@@ -630,20 +630,20 @@ h2 strong {
 .governance-actions {
   gap: 21px;
 }
+/* No frame of our own: CoW's widget brings its own rounded card, and nesting
+   it in a square box put two shape systems on top of each other. */
 .swap-panel {
   width: 100%;
   min-width: 0;
-  background: #fff;
-  border: 1px solid var(--rule);
-  border-radius: 0;
-  overflow: hidden;
 }
 .swap-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 14px;
-  padding: 25px 26px 21px;
+  /* CoW centres a 470px card inside its iframe; line the heading up with it */
+  max-width: 470px;
+  margin: 0 auto 20px;
 }
 .swap-heading h3 {
   font-size: 22px;
@@ -672,33 +672,15 @@ h2 strong {
   clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
 }
 /* The CoW widget is a cross-origin iframe: only its theme colours are ours.
-   The iframe resizes itself to its content, so centre it in a fixed stage. */
+   It resizes itself to fit its content. */
 .swap-widget {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 640px;
   width: 100%;
-  padding: 16px 8px;
 }
 .swap-widget iframe {
   display: block;
   width: 100%;
   border: 0;
 }
-.swap-caption {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 19px 25px;
-  font-size: 9px;
-  color: #6b6b6b;
-  border-top: 1px solid var(--line);
-}
-.swap-caption > span {
-  color: #6b6b6b;
-}
-
 /* Community and collaboration */
 .collaboration-section {
   display: grid;
@@ -1090,7 +1072,7 @@ h2 strong {
     max-width: 420px;
     align-self: center;
   }
-            .featured-section {
+  .featured-section {
     padding-top: 8px;
     padding-bottom: 0;
   }
@@ -1220,24 +1202,11 @@ h2 strong {
     padding-inline: 17px;
     gap: 17px;
   }
-  .swap-heading {
-    padding: 21px 17px;
-  }
   .swap-heading h3 {
     font-size: 21px;
   }
   .swap-heading p {
     font-size: 10px;
-  }
-  .swap-widget {
-    padding-inline: 0;
-  }
-  .swap-caption {
-    padding: 17px;
-    font-size: 8px;
-  }
-  .swap-caption > span {
-    display: none;
   }
   .collaboration-copy h2 {
     font-size: 38px;

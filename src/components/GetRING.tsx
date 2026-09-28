@@ -38,7 +38,8 @@ const cowWidgetParams: CowSwapWidgetParams = {
   theme: {
     baseTheme: "light",
     primary: "#000000",
-    background: "#ffffff",
+    // Widget canvas matches the section's grey, so only CoW's own card shows.
+    background: "#f6f6f6",
     paper: "#ffffff",
     text: "#000000",
     danger: "#b93f37",
@@ -97,9 +98,6 @@ export default function GetRING() {
       <div className="swap-widget" ref={widget}>
         <CowSwapWidget params={cowWidgetParams} />
       </div>
-      <p className="swap-caption">
-        Powered by CoW Swap <span>Onchain, on your terms.</span>
-      </p>
     </div>
   );
 }
