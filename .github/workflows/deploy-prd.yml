@@ -23,7 +23,5 @@ jobs:
           dist_path: dist
           prod_mode: true
           enable_cache: true
-          enable_notify_slack: true
-          slack_channel: public-ringdao-apps
-          slack_webhook: ${{ secrets.SLACK_INCOMING_WEBHOOK_URL }}
+          enable_notify_slack: false
 
