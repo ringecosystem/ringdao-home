@@ -108,9 +108,6 @@ button:focus-visible {
   gap: 9px;
   color: #6b6b6b;
 }
-.muted {
-  color: var(--muted);
-}
 .button-row {
   display: flex;
   flex-wrap: wrap;
