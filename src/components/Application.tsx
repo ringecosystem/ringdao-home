@@ -1,5 +1,6 @@
 import { links } from "../data/links";
 import Icon from "./Icon";
+import Lines from "./Lines";
 import Link from "./Link";
 
 export default function Application() {
@@ -9,22 +10,18 @@ export default function Application() {
       className="featured-section container section-space"
       aria-labelledby="degov-title"
     >
-      <div className="section-kicker">
-        <span>01 / OUR CURRENT FOCUS</span>
-        <span>FEATURED APPLICATION</span>
-      </div>
-      <div className="featured-panel">
+      <div className="featured-panel" data-reveal>
         <div className="featured-heading">
           <div>
             <div className="degov-brand">
               <img src="/images/degov.svg" alt="" width="34" height="34" />
               <span>DeGov AI</span>
-              <span className="featured-tag">GOVERNANCE, EVOLVED</span>
             </div>
             <h2 id="degov-title">
-              Run your DAO.
-              <br />
-              <span>Understand its decisions.</span>
+              <Lines
+                light={["Run your DAO"]}
+                bold={["Understand its decisions"]}
+              />
             </h2>
           </div>
           <div className="featured-intro">
@@ -38,10 +35,12 @@ export default function Application() {
           </div>
         </div>
         <div className="product-grid">
-          <article className="product-card">
+          <article
+            className="product-card"
+            style={{ "--i": 3 } as Record<string, number>}
+          >
             <div className="product-card-top">
               <Icon name="square" />
-              <span>01 — PARTICIPATE</span>
             </div>
             <h3>Square</h3>
             <p>
@@ -52,10 +51,12 @@ export default function Application() {
               Open Square <Icon name="external" />
             </Link>
           </article>
-          <article className="product-card">
+          <article
+            className="product-card"
+            style={{ "--i": 4 } as Record<string, number>}
+          >
             <div className="product-card-top">
               <Icon name="atlas" />
-              <span>02 — UNDERSTAND</span>
             </div>
             <h3>Atlas</h3>
             <p>
@@ -66,10 +67,12 @@ export default function Application() {
               Explore Atlas <Icon name="external" />
             </Link>
           </article>
-          <article className="product-card">
+          <article
+            className="product-card"
+            style={{ "--i": 5 } as Record<string, number>}
+          >
             <div className="product-card-top">
               <Icon name="code" />
-              <span>03 — BUILD</span>
             </div>
             <h3>Agent API & Skills</h3>
             <p>

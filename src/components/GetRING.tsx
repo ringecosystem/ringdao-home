@@ -37,10 +37,11 @@ const cowWidgetParams: CowSwapWidgetParams = {
   ],
   theme: {
     baseTheme: "light",
-    primary: "#315d3d",
-    background: "#fcfcfc",
-    paper: "#fcfcfc",
-    text: "#202b24",
+    primary: "#000000",
+    // Widget canvas matches the section's grey, so only CoW's own card shows.
+    background: "#f6f6f6",
+    paper: "#ffffff",
+    text: "#000000",
     danger: "#b93f37",
     warning: "#94600b",
     alert: "#94600b",
@@ -78,6 +79,8 @@ export default function GetRING() {
   return (
     <div
       className="swap-panel"
+      data-reveal
+      style={{ "--i": 1 } as Record<string, number>}
       id="get-ring"
       role="region"
       aria-labelledby="swap-title"
@@ -85,7 +88,7 @@ export default function GetRING() {
       <div className="swap-heading">
         <div>
           <h3 id="swap-title">Get RING</h3>
-          <p>Swap tokens. Join the ecosystem.</p>
+          <p>Swap tokens. Join the ecosystem</p>
         </div>
         <span className="network-label">
           <span />
@@ -95,9 +98,6 @@ export default function GetRING() {
       <div className="swap-widget" ref={widget}>
         <CowSwapWidget params={cowWidgetParams} />
       </div>
-      <p className="swap-caption">
-        Powered by CoW Swap <span>Onchain, on your terms.</span>
-      </p>
     </div>
   );
 }

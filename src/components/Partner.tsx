@@ -4,16 +4,15 @@ import Link from "./Link";
 
 export default function Partner() {
   return (
-    <div className="community" id="partner">
+    <div className="community" id="partner" data-reveal>
       <p className="eyebrow">COMMUNITY DAOS</p>
       <Link href={links.kton} className="community-link">
         <span className="community-logo">
           <img
-            src="/images/ktondao.svg"
+            src="/images/marks/ktondao.svg"
             alt=""
-            width="44"
-            height="36"
             loading="lazy"
+            className="mark-kton"
           />
         </span>
         <span className="community-info">
@@ -24,7 +23,12 @@ export default function Partner() {
       </Link>
       <Link href={links.guild} className="community-link">
         <span className="community-logo">
-          <Icon name="community" />
+          <img
+            src="/images/marks/community.svg"
+            alt=""
+            loading="lazy"
+            className="mark-community"
+          />
         </span>
         <span className="community-info">
           <strong>RingDAO Community Guild</strong>

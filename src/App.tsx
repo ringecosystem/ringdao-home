@@ -5,8 +5,10 @@ import Technology from "./components/Technology";
 import About from "./components/About";
 import Collaboration from "./components/Collaboration";
 import Footer from "./components/Footer";
+import { useReveal } from "./hooks/useReveal";
 
 export function App() {
+  useReveal();
   return (
     <div id="top">
       <a className="skip-link" href="#main">
